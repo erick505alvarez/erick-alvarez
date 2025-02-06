@@ -7,3 +7,9 @@
     margin: 0;
     padding: 0;
 }
+
+@layer base {
+  h1, h2 {
+    @apply font-outfit;
+  }
+}
