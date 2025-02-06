@@ -16,6 +16,19 @@ module.exports = {
         outfit: ["Outfit", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      keyframes: {
+        float: {
+          "0%": { transform: "translate(-50%, -50%)" },
+          "50%": { transform: "translate(-50%, calc(-50% - 2px))" },
+          "100%": { transform: "translate(-50%, -50%)" },
+        },
+      },
+      animation: {
+        "float-github": "float 1s infinite ease-in-out",
+        "float-linkedin": "float 2.25s infinite ease-in-out",
+        "float-tiktok": "float 1.5s infinite ease-in-out",
+        "float-instagram": "float 2.5s infinite ease-in-out",
+      },
     },
   },
   plugins: [],

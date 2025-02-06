@@ -7,7 +7,7 @@ import instagramLogo from "../images/logos/instagram.png";
 
 const HeroSection = () => {
   const logoClasses =
-    "absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 cursor-pointer";
+    "absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer";
   return (
     <section className="flex justify-around items-center py-20 pb-40 px-6">
       {/* ------------------ Hero Text start ------------------ */}
@@ -27,8 +27,8 @@ const HeroSection = () => {
       {/* ------------------ Hero Text end ------------------ */}
 
       {/* ------------------ Photo Section start ------------------ */}
-      <div className="PHOTO-CONTAINER border-red-800 relative">
-        <div className="overflow-hidden w-[350px] h-[350px] flex justify-center items-center rounded-full">
+      <div className="PHOTO-CONTAINER border-red-800 relative w-[350px] h-[350px]">
+        <div className="overflow-hidden w-full h-full flex justify-center items-center rounded-full">
           <img
             className="object-cover rounded-full w-[400px] h-[400px] relative bottom-4"
             src={erickPhoto}
@@ -36,22 +36,22 @@ const HeroSection = () => {
           />
         </div>
         <img
-          className={`z-10 ${logoClasses} w-20 h-20 -left-14 top-[60%]`}
+          className={`z-10 ${logoClasses} w-20 h-20 -left-14 top-[60%] animate-float-github`}
           src={githubLogo}
           alt="github-logo"
         />
         <img
-          className={`z-8 ${logoClasses} w-32 h-32 -left-8 top-[95%]`}
+          className={`z-8 ${logoClasses} w-32 h-32 -left-8 top-[95%] animate-float-linkedin`}
           src={linkedinLogo}
           alt="linkedin-logo"
         />
         <img
-          className={`z-6 ${logoClasses} w-14 h-14 left-20 top-[110%]`}
+          className={`z-6 ${logoClasses} w-14 h-14 left-20 top-[110%] animate-float-tiktok`}
           src={tiktokLogo}
           alt="tiktok-logo"
         />
         <img
-          className={`z-4 ${logoClasses} w-20 h-20 left-44 top-[118%]`}
+          className={`z-4 ${logoClasses} w-20 h-20 left-44 top-[118%] animate-float-instagram`}
           src={instagramLogo}
           alt="instagram-logo"
         />
