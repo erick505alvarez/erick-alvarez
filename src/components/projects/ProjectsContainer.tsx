@@ -36,7 +36,8 @@ function ProjectsContainer() {
   ];
 
   return (
-    <section className="flex-grow px-6 py-6">
+    // <section className="flex-grow px-6 py-6">
+    <section className="px-6 py-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects &&
           projects.map((project) => <ProjectCard project={project} />)}
