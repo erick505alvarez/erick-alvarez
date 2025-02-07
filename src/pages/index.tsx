@@ -20,7 +20,7 @@ const Home: React.FC<PageProps> = () => {
 
 export default Home;
 
-// export const Head: HeadFC = () => <title>Erick Alvarez</title>;
+export const Head: HeadFC = () => <title>Erick Alvarez</title>;
 
 {
   /* <img
