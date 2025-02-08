@@ -24,9 +24,9 @@ module.exports = {
         },
       },
       animation: {
-        "float-github": "float 1s infinite ease-in-out",
+        "float-github": "float 1.5s infinite ease-in-out",
         "float-linkedin": "float 2.25s infinite ease-in-out",
-        "float-tiktok": "float 1.5s infinite ease-in-out",
+        "float-tiktok": "float 2s infinite ease-in-out",
         "float-instagram": "float 2.5s infinite ease-in-out",
       },
     },
