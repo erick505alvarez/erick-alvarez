@@ -29,7 +29,7 @@ interface AllFileQuery {
 function ProjectsContainer() {
   const data = useStaticQuery<AllFileQuery>(graphql`
     query {
-      allFile(filter: { relativePath: { regex: "/(wasy|moleqlar|blackrock|desca|rolled-down|photography)\\.(png|jpg|jpeg|webp)$/" } }) {
+      allFile(filter: { relativePath: { regex: "/(wasy|moleqlar|blackrock|desca|music-production|photography)\\.(png|jpg|jpeg|webp)$/" } }) {
         edges {
           node {
             relativePath
@@ -48,7 +48,7 @@ function ProjectsContainer() {
     "moleqlar",
     "blackrock",
     "desca",
-    "rolled-down",
+    "music-production",
     "photography",
   ];
 
@@ -74,7 +74,7 @@ function ProjectsContainer() {
           heading: "DESCA",
           subheading: "Launched Private Label Business",
         };
-      case "rolled-down":
+      case "music-production":
         return {
           heading: "Music Production",
           subheading: "Produced by seekay",
