@@ -24,7 +24,7 @@ const HeroSection = () => {
     <section className="flex flex-col md:flex-row justify-around items-center py-4 md:py-20 pb-24 md:pb-36 px-6">
       {/* ------------------ Hero Text start ------------------ */}
       <div className="HERO-CONTENT flex flex-col gap-4 md:gap-10 mb-10 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-[0.03em]">
+        <h1 className="text-4xl md:text-5xl font-semibold tracking-[0.03em]">
           Hi, I'm Erick
           <br />
           <span className="text-primary">Software Engineer</span>
