@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 function ProjectsContainer() {
   const projects: Project[] = [
     {
-      heading: "wasy.ai",
+      heading: "Wasy.ai",
       subheading: "Full Stack Engineer",
       img: (
         <StaticImage

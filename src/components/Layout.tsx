@@ -10,10 +10,12 @@ const Layout = ({ children }: LayoutProps) => {
     // <div className={"LAYOUT h-screen flex-grow overflow-hidden bg-off-white"}>
     <div className={"LAYOUT min-h-screen bg-off-white"}>
       {/* navbar */}
-      <nav className="flex justify-end py-2 px-6 h-[60px]">
-        <button className="bg-primary text-white py-2 px-6 rounded-lg font-montserrat font-bold">
-          Let's Chat
-        </button>
+      <nav className="flex justify-end items-center px-6 h-[80px]">
+        <a href="#contact">
+          <button className="bg-primary text-white py-2 px-6 rounded-lg font-montserrat font-bold">
+            Let's Chat
+          </button>
+        </a>
       </nav>
       {/* main body */}
       {children}

@@ -21,13 +21,16 @@ const HeroSection = () => {
   // };
 
   return (
-    <section className="flex flex-col md:flex-row justify-around items-center py-4 md:py-20 pb-24 md:pb-36 px-6">
+    <section className="flex flex-col md:flex-row justify-around items-center py-4 md:py-10 pb-24 md:pb-36 px-6">
       {/* ------------------ Hero Text start ------------------ */}
       <div className="HERO-CONTENT flex flex-col gap-4 md:gap-10 mb-10 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-[0.03em]">
+        {/* <h1 className="text-4xl md:text-5xl font-semibold tracking-[0.03em]"> */}
+        <h1 className="text-4xl md:text-5xl font-semibold tracking-[-0.01em]">
           Hi, I'm Erick
           <br />
-          <span className="text-primary">Software Engineer</span>
+          <span className="text-primary tracking-normal">
+            Software Engineer
+          </span>
         </h1>
         <p className="text-light font-montserrat text-xl max-w-[300px]">
           I love to build things. I love to solve problems.

@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Erick Alvarez`,
-    // siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.erickalvarez.info`,
     description: "Erick Alvarez Portfolio Website",
     contact: "erickalvarez.official@gmail.com",
   },
