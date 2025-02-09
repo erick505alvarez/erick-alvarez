@@ -37,10 +37,11 @@ const HeroSection = () => {
         <p className="text-light font-montserrat text-xl max-w-[300px]">
           I love to build things. I love to solve problems.
         </p>
-        <a href="#projects">
-          <button className="inline-block font-semibold tracking-wide text-lg font-outfit border-none w-min py-2 px-6 rounded-lg text-white bg-primary">
-            Projects
-          </button>
+        <a
+          href="#projects"
+          className="inline-block font-semibold tracking-wide text-lg font-outfit border-none w-min py-2 px-6 rounded-lg text-white bg-primary"
+        >
+          <button>Projects</button>
         </a>
       </div>
       {/* ------------------ Hero Text end ------------------ */}
