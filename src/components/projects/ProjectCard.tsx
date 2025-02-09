@@ -15,7 +15,7 @@ function ProjectCard({ project }: ProjectCardProps) {
     <div className="w-80 h-80 rounded-xl mx-auto overflow-hidden relative">
       <div
         className={` bg-white w-full h-[80%] flex justify-center items-center ${
-          project.heading === "moleQLar" ? "bg-[#FCFCFC] px-4" : ""
+          project.heading === "moleQLar" ? "bg-[#FCFCFD] px-4" : ""
         }`}
       >
         {project.img}
