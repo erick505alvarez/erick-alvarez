@@ -63,7 +63,7 @@ const HeroSection = () => {
         <a
           href="https://www.github.com/erick505alvarez"
           target="_blank"
-          className={`z-10 ${logoClasses} w-16 h-16 md:w-20 md:h-20 -left-10 md:-left-14 top-[60%] rounded-full animate-float-github`}
+          className={`z-10 ${logoClasses} w-16 h-16 md:w-20 md:h-20 -left-[44px] md:-left-14 top-[57%] rounded-full animate-float-github`}
         >
           <StaticImage
             key="github"
@@ -76,7 +76,7 @@ const HeroSection = () => {
         </a>
         <a
           href="https://www.linkedin.com/in/erick505alvarez/"
-          className={`z-8 ${logoClasses} w-20 h-20 md:w-32 md:h-32 -left-6 md:-left-8 top-[100%] md:top-[95%] rounded-full animate-float-linkedin`}
+          className={`z-8 ${logoClasses} w-20 h-20 md:w-32 md:h-32 -left-5 md:-left-8 top-[102%] md:top-[95%] rounded-full animate-float-linkedin`}
           target="_blank"
         >
           <StaticImage
@@ -91,7 +91,7 @@ const HeroSection = () => {
         <a
           href="https://www.tiktok.com/@prodbyseekay"
           target="_blank"
-          className={`z-6 ${logoClasses} w-14 h-14 md:w-14 md:h-14 left-16 md:left-20 top-[118%] md:top-[110%] rounded-full animate-float-tiktok`}
+          className={`z-6 ${logoClasses} w-12 h-12 md:w-14 md:h-14 left-16 md:left-20 top-[118%] md:top-[110%] rounded-full animate-float-tiktok`}
         >
           <StaticImage
             key="tiktok"
@@ -105,7 +105,7 @@ const HeroSection = () => {
         <a
           href="https://www.instagram.com/prodbyseekay/"
           target="_blank"
-          className={`z-4 ${logoClasses} w-16 h-16 md:w-20 md:h-20 left-40 md:left-44 top-[115%] md:top-[118%] rounded-full animate-float-instagram`}
+          className={`z-4 ${logoClasses} w-16 h-16 md:w-20 md:h-20 left-[9.1rem] md:left-[180px] top-[117%] md:top-[118%] rounded-full animate-float-instagram`}
         >
           <StaticImage
             key="instagram"
