@@ -32,9 +32,11 @@ const HeroSection = () => {
         <p className="text-light font-montserrat text-xl max-w-[300px]">
           I love to build things. I love to solve problems.
         </p>
-        <button className="inline-block font-semibold tracking-wide text-lg font-outfit border-none w-min py-2 px-6 rounded-lg text-white bg-primary">
-          Projects
-        </button>
+        <a href="#projects">
+          <button className="inline-block font-semibold tracking-wide text-lg font-outfit border-none w-min py-2 px-6 rounded-lg text-white bg-primary">
+            Projects
+          </button>
+        </a>
       </div>
       {/* ------------------ Hero Text end ------------------ */}
 
@@ -47,30 +49,38 @@ const HeroSection = () => {
             alt="profile photo"
           />
         </div>
-        <img
-          key="github"
-          className={`z-10 ${logoClasses} w-16 h-16 md:w-20 md:h-20 -left-10 md:-left-14 top-[60%] animate-float-github`}
-          src={githubLogo}
-          alt="github logo"
-        />
-        <img
-          key="linkedin"
-          className={`z-8 ${logoClasses} w-20 h-20 md:w-32 md:h-32 -left-6 md:-left-8 top-[100%] md:top-[95%] animate-float-linkedin`}
-          src={linkedinLogo}
-          alt="linkedin logo"
-        />
-        <img
-          key="tiktok"
-          className={`z-6 ${logoClasses} w-14 h-14 md:w-14 md:h-14 left-16 md:left-20 top-[118%] md:top-[110%] animate-float-tiktok`}
-          src={tiktokLogo}
-          alt="tiktok logo"
-        />
-        <img
-          key="instagram"
-          className={`z-4 ${logoClasses} w-16 h-16 md:w-20 md:h-20 left-40 md:left-44 top-[115%] md:top-[118%] animate-float-instagram`}
-          src={instagramLogo}
-          alt="instagram logo"
-        />
+        <a href="https://www.github.com/erick505alvarez" target="_blank">
+          <img
+            key="github"
+            className={`z-10 ${logoClasses} w-16 h-16 md:w-20 md:h-20 -left-10 md:-left-14 top-[60%] animate-float-github`}
+            src={githubLogo}
+            alt="github logo"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/erick505alvarez/" target="_blank">
+          <img
+            key="linkedin"
+            className={`z-8 ${logoClasses} w-20 h-20 md:w-32 md:h-32 -left-6 md:-left-8 top-[100%] md:top-[95%] animate-float-linkedin`}
+            src={linkedinLogo}
+            alt="linkedin logo"
+          />
+        </a>
+        <a href="https://www.tiktok.com/@prodbyseekay" target="_blank">
+          <img
+            key="tiktok"
+            className={`z-6 ${logoClasses} w-14 h-14 md:w-14 md:h-14 left-16 md:left-20 top-[118%] md:top-[110%] animate-float-tiktok`}
+            src={tiktokLogo}
+            alt="tiktok logo"
+          />
+        </a>
+        <a href="https://www.instagram.com/prodbyseekay/" target="_blank">
+          <img
+            key="instagram"
+            className={`z-4 ${logoClasses} w-16 h-16 md:w-20 md:h-20 left-40 md:left-44 top-[115%] md:top-[118%] animate-float-instagram`}
+            src={instagramLogo}
+            alt="instagram logo"
+          />
+        </a>
       </div>
       {/* ------------------ Photo Section end ------------------ */}
     </section>

@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @layer base {
   h1, h2 {
     @apply font-outfit;
