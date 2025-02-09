@@ -11,8 +11,8 @@ function ProjectsContainer() {
         <StaticImage
           src="../../images/wasy.png"
           alt="wasy image"
+          placeholder="blurred"
           className="w-[100%] h-[100%] scale-[1.1]"
-          imgClassName="scale-50"
         />
       ),
     },
@@ -23,7 +23,9 @@ function ProjectsContainer() {
         <StaticImage
           src="../../images/moleqlar.jpg"
           alt="moleqlar image"
+          placeholder="blurred"
           // className="border-2 border-red-800"
+          layout="constrained"
         />
       ),
     },
@@ -31,13 +33,32 @@ function ProjectsContainer() {
       heading: "BlackRock",
       subheading: "Python Library - Portfolio Management",
       img: (
-        <StaticImage src="../../images/blackrock.jpg" alt="blackrock image" />
+        <StaticImage
+          src="../../images/blackrock.jpg"
+          alt="blackrock image"
+          placeholder="blurred"
+          // width={400}
+          // height={730}
+          // layout="constrained"
+          className="w-full h-full"
+          objectFit="cover"
+          objectPosition={"50% 43%"}
+        />
       ),
     },
     {
       heading: "DESCA",
       subheading: "Launched Private Label Business",
-      img: <StaticImage src="../../images/desca.jpg" alt="desca image" />,
+      img: (
+        <StaticImage
+          src="../../images/desca.jpg"
+          alt="desca image"
+          placeholder="blurred"
+          // width={400}
+          // height={400}
+          // layout="constrained"
+        />
+      ),
     },
     {
       heading: "Music Production",
@@ -46,6 +67,7 @@ function ProjectsContainer() {
         <StaticImage
           src="../../images/music-production.jpg"
           alt="music production image"
+          placeholder="blurred"
         />
       ),
     },
@@ -56,6 +78,13 @@ function ProjectsContainer() {
         <StaticImage
           src="../../images/photography.jpg"
           alt="photography image"
+          placeholder="blurred"
+          // width={400}
+          // height={400}
+          // objectFit="cover"
+          // className="w-full h-full"
+          // objectPosition="100% 30%"
+          className="w-full h-full"
         />
       ),
     },
