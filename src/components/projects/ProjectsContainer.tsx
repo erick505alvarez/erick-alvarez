@@ -70,6 +70,7 @@ function ProjectsContainer() {
           placeholder="blurred"
         />
       ),
+      videoUrl: `https://www.youtube.com/watch?v=2Mny_sLNjs0`,
     },
     {
       heading: "Photography",
