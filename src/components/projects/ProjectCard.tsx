@@ -37,11 +37,20 @@ function ProjectCard({ project }: ProjectCardProps) {
         className="w-80 h-80 rounded-xl mx-auto overflow-hidden relative"
       >
         <div
-          className={` bg-white w-full h-[80%] flex justify-center items-center ${
+          className={` bg-white w-full h-[80%] flex justify-center items-center relative ${
             project.heading === "moleQLar" ? "bg-[#FDFDFD] px-4" : ""
           }`}
         >
           {project.img}
+          {project.videoUrl && (
+            <Icon
+              cn="absolute left-[55%] translate-x-[-50%] opacity-80"
+              fill="white"
+              w="90"
+              h="90"
+              icon="play"
+            />
+          )}
         </div>
         <div className="px-4 flex flex-col justify-center w-full h-[20%] bg-primary text-white relative">
           <h1 className="">{project.heading}</h1>
@@ -59,7 +68,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             className="absolute top-4 right-4 text-white z-10 bg-neutral-800 rounded-full p-2 opacity-80"
             onClick={handleCloseOverlay}
           >
-            <Icon cn="" w="30" h="30" icon="close"></Icon>
+            <Icon cn="" w="30" h="30" icon="close" />
           </button>{" "}
           {/* Added overlay click handler */}
           <div className="relative">
