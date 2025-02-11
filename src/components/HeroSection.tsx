@@ -59,6 +59,7 @@ const HeroSection = () => {
             src="../images/profile-photo-erick.png"
             alt="profile photo"
             placeholder="blurred"
+            width={800}
           />
         </div>
         <a
