@@ -37,14 +37,14 @@ function ProjectCard({ project }: ProjectCardProps) {
         className="w-80 h-80 rounded-xl mx-auto overflow-hidden relative"
       >
         <div
-          className={` bg-white w-full h-[80%] flex justify-center items-center relative ${
-            project.heading === "moleQLar" ? "bg-[#FDFDFD] px-4" : ""
-          }`}
+          className={`bg-white w-full h-[80%] flex justify-center items-center relative
+            ${project.heading === "moleQLar" ? "bg-[#FDFDFD] px-4" : ""}
+            ${project.videoUrl ? "hover:cursor-pointer" : ""}`}
         >
           {project.img}
           {project.videoUrl && (
             <Icon
-              cn="absolute left-[55%] translate-x-[-50%] opacity-80"
+              cn="absolute left-[55%] translate-x-[-50%] opacity-80 hover:cursor-pointer"
               fill="white"
               w="90"
               h="90"
