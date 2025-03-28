@@ -30,7 +30,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-5xl font-semibold tracking-[-0.01em]">
           Hi, I'm Erick
           <br />
-          <span className="text-primary tracking-normal">
+          <span className="text-orange-500 tracking-normal">
             Software Engineer
           </span>
         </h1>
@@ -39,9 +39,9 @@ const HeroSection = () => {
         </p>
         <a
           href="#projects"
-          className="inline-block font-semibold tracking-wide text-lg font-outfit border-none w-min py-2 px-6 rounded-lg text-white bg-primary"
+          className="flex w-min min-w-32 justify-center items-center font-semibold tracking-wide text-lg font-outfit border-none py-2 px-6 rounded-md text-white bg-primary"
         >
-          <button>Projects</button>
+          <button>My Work</button>
         </a>
       </div>
       {/* ------------------ Hero Text end ------------------ */}

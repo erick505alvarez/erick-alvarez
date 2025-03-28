@@ -1,0 +1,31 @@
+@import url("global.css");
+
+
+/* -------------- square grid -------------- */
+.square-grid-container {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: var(--grid-dimensions);
+    height: var(--grid-dimensions);
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    grid-gap: 10px;
+    transform: translateX(60vw) translateY(10vh);
+}
+
+.grid-square {
+    background-color: var(--orange-200);
+    width: 70%;
+    height: 70%;
+}
+
+/* -------------- single square -------------- */
+.single-square{
+    position: absolute;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    transform: translateX(10vw) translateY(60vh);
+}

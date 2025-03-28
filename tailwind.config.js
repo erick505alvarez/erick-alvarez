@@ -10,7 +10,23 @@ module.exports = {
         "off-white": "#FDFAF2",
         primary: "#DD7A09",
         black: "#000000",
-        white: "#FFFFFF",
+        white: "#FCFCFC",
+        orange: {
+          500: "#DD7A09",
+          300: "#EA9C3E",
+          200: "#F0C795",
+          100: "#FDFAF2",
+        },
+        yellow: {
+          500: "#E4BF1F",
+          300: "#F2E4A4",
+          100: "#FCF8E6",
+        },
+        purple: {
+          500: "#D773FF",
+          300: "#D695F0",
+          200: "#F6E6FC",
+        },
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],

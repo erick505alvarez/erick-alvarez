@@ -12,7 +12,7 @@ const Home: React.FC<PageProps> = () => {
       <main className="MAIN-CONTENT flex flex-col">
         <HeroSection />
         <ProjectsContainer />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </Layout>
   );
