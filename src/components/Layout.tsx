@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
-import SquareGrid from "./design-components/SquareGrid";
-import SingleSquare from "./design-components/SingleSquare";
+import DesignCanvas from "./DesignCanvas";
 // import "../styles/global.css";
 
 interface LayoutProps {
@@ -11,11 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     // <div className={"LAYOUT h-screen flex-grow overflow-hidden bg-off-white"}>
     <div className={"LAYOUT h-[100vh] flex flex-col"}>
-      {/* design canvas */}
-      <div className="DESIGN-CANVAS fixed w-full z-0 top-0 bottom-0 left-0 right-0">
-        <SquareGrid gridDimensions={100} />
-        <SingleSquare dimensions={14} bgColorClass="bg-orange-200" />
-      </div>
+      <DesignCanvas />
       <div className="relative z-1 h-full w-full overflow-y-auto">
         {/* navbar */}
         <nav className="flex absolute justify-end items-center px-6 h-[80px] w-full">

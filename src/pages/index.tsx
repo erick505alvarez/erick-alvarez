@@ -11,7 +11,7 @@ const Home: React.FC<PageProps> = () => {
       {/* <main className="MAIN-CONTENT h-[calc(100vh_-_60px)] flex flex-col"> */}
       <main className="MAIN-CONTENT flex flex-col">
         <HeroSection />
-        <ProjectsContainer />
+        {/* <ProjectsContainer /> */}
         {/* <Footer /> */}
       </main>
     </Layout>
