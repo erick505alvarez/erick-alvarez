@@ -18,7 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
       <div className="relative z-1 h-full w-full overflow-y-auto">
         {/* navbar */}
-        <nav className="flex justify-end items-center px-6 h-[80px]">
+        <nav className="flex absolute justify-end items-center px-6 h-[80px] w-full">
           <a href="#contact">
             <button className="bg-primary text-white py-2 px-6 rounded-md font-montserrat font-bold">
               Let's Chat
@@ -26,7 +26,6 @@ const Layout = ({ children }: LayoutProps) => {
           </a>
         </nav>
         {/* main body */}
-
         {children}
         {/* footer */}
       </div>

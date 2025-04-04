@@ -11,6 +11,14 @@ const HeroSection = () => {
   const logoClasses =
     "absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer";
 
+  // erick photo dimensions
+  // const photo_sizes = {
+  //   default: 200,
+  //   md: 325,
+  //   lg: 400,
+  //   xl: 500,
+  // };
+
   // const ratios = {
   //   github: 20 / 32,
   //   linkedin: 32 / 32,
@@ -23,49 +31,57 @@ const HeroSection = () => {
   // };
 
   return (
-    <section className="flex flex-col md:flex-row justify-around items-center py-4 md:py-10 pb-24 md:pb-36 px-6">
+    <section className="HERO-CONTAINER flex flex-col md:flex-row justify-around items-center py-20 md:py-40 pb-24 md:pb-36 px-6 aspect-[16/9]">
       {/* ------------------ Hero Text start ------------------ */}
-      <div className="HERO-CONTENT flex flex-col gap-4 md:gap-10 mb-10 md:mb-0">
+      <div className="HERO-TEXT flex flex-col gap-4 md:gap-10 mb-10 md:mb-0">
         {/* <h1 className="text-4xl md:text-5xl font-semibold tracking-[0.03em]"> */}
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-[-0.01em]">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]">
           Hi, I'm Erick
           <br />
           <span className="text-orange-500 tracking-normal">
             Software Engineer
           </span>
         </h1>
-        <p className="text-light font-montserrat text-xl max-w-[300px]">
+        <p className="text-light font-montserrat text-lg max-w-[400px]">
           I love to build things. I love to solve problems.
         </p>
         <a
           href="#projects"
-          className="flex w-min min-w-32 justify-center items-center font-semibold tracking-wide text-lg font-outfit border-none py-2 px-6 rounded-md text-white bg-primary"
+          className="flex w-min min-w-36 justify-center items-center font-semibold tracking-wide text-xl font-outfit border-none py-2 px-6 rounded-md text-white bg-primary"
         >
-          <button>My Work</button>
+          My Work
         </a>
       </div>
       {/* ------------------ Hero Text end ------------------ */}
 
       {/* ------------------ Photo Section start ------------------ */}
-      <div className="PHOTO-CONTAINER border-red-800 relative translate-x-8 w-[200px] h-[200px] md:w-[350px] md:h-[350px]">
-        <div className="overflow-hidden w-full h-full flex justify-center items-center rounded-full">
+      <div
+        className={`PHOTO-CONTAINER border-red-800 flex-shrink-0 relative translate-x-8 aspect-square
+          w-[200px] h-[200px]
+          md:w-[325px] md:h-[325px]
+          lg:w-[400px] lg:h-[400px]
+          xl:w-[500px] xl:h-[500px]`}
+      >
+        <div className="MASK overflow-hidden w-full h-full flex justify-center items-center rounded-full">
           {/* <img
             className="object-cover rounded-full w-[275px] h-[275px] md:w-[400px] md:h-[400px] relative bottom-4"
             src={erickPhoto}
             alt="profile photo"
           /> */}
           <StaticImage
-            className="object-cover rounded-full w-[275px] h-[275px] md:w-[400px] md:h-[400px] relative bottom-4"
+            // className="object-cover rounded-full w-[275px] h-[275px] md:w-[400px] md:h-[400px] relative bottom-4"
+            className="object-cover rounded-full w-[275px] h-[275px] md:w-full md:h-full relative bottom-4"
             src="../images/profile-photo-erick.png"
             alt="profile photo"
             placeholder="blurred"
             width={800}
           />
         </div>
+        {/* github logo */}
         <a
           href="https://www.github.com/erick505alvarez"
           target="_blank"
-          className={`z-10 ${logoClasses} w-16 h-16 md:w-20 md:h-20 -left-[44px] md:-left-14 top-[57%] rounded-full animate-float-github`}
+          className={`GITHUB z-10 ${logoClasses} w-16 h-16 md:w-24 md:h-24 -left-[3rem] md:-left-[4rem] top-[54%] lg:top-[64%] xl:top-[60%] xl:-left-[4rem] rounded-full animate-float-github`}
         >
           <StaticImage
             key="github"
@@ -76,9 +92,10 @@ const HeroSection = () => {
             placeholder="blurred"
           />
         </a>
+        {/* linkedin logo */}
         <a
           href="https://www.linkedin.com/in/erick505alvarez/"
-          className={`z-8 ${logoClasses} w-20 h-20 md:w-32 md:h-32 -left-5 md:-left-8 top-[102%] md:top-[95%] rounded-full animate-float-linkedin`}
+          className={`LINKED-IN z-8 ${logoClasses} w-20 h-20 md:w-32 md:h-32 -left-5 md:-left-8 top-[102%] md:top-[95%] lg:-left-4 lg:top-[96%] xl:top-[90%] rounded-full animate-float-linkedin`}
           target="_blank"
         >
           <StaticImage
@@ -90,10 +107,11 @@ const HeroSection = () => {
             placeholder="blurred"
           />
         </a>
-        <a
+        {/* tiktok logo */}
+        {/* <a
           href="https://www.tiktok.com/@prodbyseekay"
           target="_blank"
-          className={`z-6 ${logoClasses} w-12 h-12 md:w-14 md:h-14 left-16 md:left-20 top-[118%] md:top-[110%] rounded-full animate-float-tiktok`}
+          className={`TIK-TOK z-6 ${logoClasses} w-12 h-12 md:w-14 md:h-14 left-16 md:left-20 top-[118%] md:top-[110%] rounded-full animate-float-tiktok`}
         >
           <StaticImage
             key="tiktok"
@@ -103,11 +121,12 @@ const HeroSection = () => {
             alt="tiktok logo"
             placeholder="blurred"
           />
-        </a>
+        </a> */}
+        {/* instagram logo */}
         <a
           href="https://www.instagram.com/prodbyseekay/"
           target="_blank"
-          className={`z-4 ${logoClasses} w-16 h-16 md:w-20 md:h-20 left-[9.1rem] md:left-[180px] top-[117%] md:top-[118%] rounded-full animate-float-instagram`}
+          className={`INSTAGRAM z-4 ${logoClasses} w-16 h-16 md:w-20 md:h-20 left-[4.2rem] top-[124%] md:left-[6rem] md:top-[112%] lg:left-[7rem] lg:top-[109%] xl:top-[105%] rounded-full animate-float-instagram`}
         >
           <StaticImage
             key="instagram"
