@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 import { PAGES } from "../types";
 
@@ -23,4 +23,11 @@ export const DesignProvider = ({ children }: DesignProviderProps) => {
       {children}
     </DesignContext.Provider>
   );
+};
+
+export const useDesignContext = () => {
+  const context = useContext(DesignContext);
+  if (!context)
+    throw Error("useDesignContext must be used inside of DesignProvider");
+  return context;
 };
