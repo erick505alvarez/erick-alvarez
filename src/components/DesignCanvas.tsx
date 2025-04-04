@@ -1,6 +1,7 @@
 import React from "react";
 import SquareGrid from "./design-components/SquareGrid";
 import SingleSquare from "./design-components/SingleSquare";
+import { useDesignContext } from "../contexts/DesignContext";
 
 const DesignCanvas = () => {
   const { currentPage } = useDesignContext();
