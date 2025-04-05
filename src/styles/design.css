@@ -1,19 +1,25 @@
 @import url("global.css");
 
+/* -------------- Design Canvas -------------- */
+.DESIGN-CANVAS {
+    position: fixed;
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+}
 
 /* -------------- square grid -------------- */
 .square-grid-container {
-    position: absolute;
+    position: fixed;
     z-index: -1;
-    top: 0;
-    left: 0;
+    top: 20%;
+    left: 58%;
     width: var(--grid-dimensions);
     height: var(--grid-dimensions);
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(5, 20%);
     grid-gap: 10px;
-    /* transform: translateX(60vw) translateY(150%); */
 }
 
 .grid-square {
@@ -24,8 +30,23 @@
 
 /* -------------- single square -------------- */
 .single-square{
-    position: absolute;
+    position: fixed;
     width: var(--dimensions);
     height: var(--dimensions);
-    /* transform: translateX(10vw) translateY(60vh); */
+}
+
+.single-square:nth-child(1) {
+    /* background-color: red; */
+    top: 75%;
+    left: 25%;
+}
+.single-square:nth-child(2) {
+    /* background-color: red; */
+    top: 25%;
+    left: 45%;
+}
+.single-square:nth-child(3) {
+    /* background-color: red; */
+    top: 15%;
+    left: 25%;
 }

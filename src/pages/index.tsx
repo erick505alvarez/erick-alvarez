@@ -2,8 +2,9 @@ import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import Layout from "../components/Layout";
 import HeroSection from "../components/HeroSection";
-import ProjectsContainer from "../components/projects/ProjectsContainer";
-import Footer from "../components/Footer";
+import FirstExperienceSection from "../components/experiences/FirstExperienceSection";
+// import ProjectsContainer from "../components/projects/ProjectsContainer";
+// import Footer from "../components/Footer";
 
 const Home: React.FC<PageProps> = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC<PageProps> = () => {
       {/* <main className="MAIN-CONTENT h-[calc(100vh_-_60px)] flex flex-col"> */}
       <main className="MAIN-CONTENT flex flex-col">
         <HeroSection />
+        <FirstExperienceSection />
         {/* <ProjectsContainer /> */}
         {/* <Footer /> */}
       </main>
