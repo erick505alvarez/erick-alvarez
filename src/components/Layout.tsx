@@ -10,10 +10,11 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     // <div className={"LAYOUT h-screen flex-grow overflow-hidden bg-off-white"}>
-    <div className={"LAYOUT h-[100vh] flex flex-col"}>
+    <div className={"LAYOUT h-screen w-screen flex flex-col"}>
       <DesignProvider>
         <DesignCanvas />
-        <div className="relative z-1 h-full w-full overflow-y-auto">
+        {/* scroll container */}
+        <main className="relative z-1 h-full w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory">
           {/* navbar */}
           <nav className="flex absolute justify-end items-center px-6 h-[80px] w-full">
             <a href="#contact">
@@ -25,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
           {/* main body */}
           {children}
           {/* footer */}
-        </div>
+        </main>
       </DesignProvider>
     </div>
   );
