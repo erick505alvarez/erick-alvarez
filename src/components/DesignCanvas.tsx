@@ -1,6 +1,7 @@
 import React from "react";
 import SquareGrid from "./design-components/SquareGrid";
 import SingleSquare from "./design-components/SingleSquare";
+import Timeline from "./design-components/Timeline";
 import { useDesignContext } from "../contexts/DesignContext";
 import "../styles/design.css";
 
@@ -15,6 +16,7 @@ const DesignCanvas = () => {
         <SingleSquare dimensions={14} bgColorClass="bg-orange-200" />
         <SingleSquare dimensions={14} bgColorClass="bg-orange-200" />
       </div>
+      <Timeline />
     </div>
   );
 };
