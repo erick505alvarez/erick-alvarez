@@ -1,49 +1,37 @@
-import * as React from "react"
-import { Link, HeadFC, PageProps } from "gatsby"
+// src/pages/404.tsx
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import React from "react";
+import { Link } from "gatsby";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage: React.FC<PageProps> = () => {
+const NotFoundPage: React.FC = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800">
+      {/* Main Content */}
+      <div className="text-center space-y-6">
+        {/* Title */}
+        <h1 className="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+          404
+        </h1>
 
-export default NotFoundPage
+        {/* Subtitle */}
+        <p className="text-3xl font-semibold">Oops! Page Not Found</p>
 
-export const Head: HeadFC = () => <title>Not found</title>
+        {/* Description */}
+        <p className="text-lg text-gray-600">
+          The page you are looking for might have been removed, had its name
+          changed, or is temporarily unavailable.
+        </p>
+
+        {/* Back to Home Button */}
+        <Link
+          to="/"
+          className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-md shadow-md hover:bg-blue-700 transition duration-300"
+        >
+          Go Back to Homepage
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default NotFoundPage;

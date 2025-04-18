@@ -3,5 +3,6 @@ export enum PAGES {
   WASY = "WASY",
   MOLEQLAR = "MOLEQLAR",
   BLACKROCK = "BLACKROCK",
+  HOBBIES = "HOBBIES",
   CONTACT = "CONTACT",
 }

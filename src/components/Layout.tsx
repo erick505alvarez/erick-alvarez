@@ -48,6 +48,7 @@ const NavBar = React.memo(function NavBar({
     WASY: "bg-orange-500",
     MOLEQLAR: "bg-purple-400",
     BLACKROCK: "bg-yellow-500",
+    HOBBIES: "bg-blue-500",
     CONTACT: "hidden",
   };
 
@@ -78,6 +79,7 @@ const Layout = ({ children }: LayoutProps) => {
       PAGES.WASY,
       PAGES.MOLEQLAR,
       PAGES.BLACKROCK,
+      PAGES.HOBBIES,
       PAGES.CONTACT,
     ],
     []
@@ -149,7 +151,7 @@ const Layout = ({ children }: LayoutProps) => {
       <DesignCanvas />
       {/* scroll container */}
       <main
-        className="relative h-full w-full max-w-[1440px] overflow-y-auto overflow-x-hidden sm:snap-y sm:snap-mandatory scroll-smooth"
+        className="relative h-full w-full max-w-[1440px] overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory scroll-smooth"
         ref={scrollContainerRef}
       >
         {/* Use memoized navbar */}

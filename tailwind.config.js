@@ -28,6 +28,13 @@ module.exports = {
           200: "#EDC5FD",
           100: "#F6E6FC",
         },
+        blue: {
+          500: "#0914DD",
+          400: "#737AFF",
+          300: "#959AF0",
+          200: "#E6E7FC",
+          100: "#F6F6FB",
+        },
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
