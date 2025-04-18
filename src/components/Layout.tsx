@@ -52,7 +52,7 @@ const NavBar = React.memo(function NavBar({
   };
 
   return (
-    <nav className="flex fixed justify-end items-center px-6 h-[80px] w-full">
+    <nav className="flex fixed justify-end items-center px-6 h-[80px] w-full max-w-[1024px]">
       <a href="#contact">
         <button
           className={`${nav_bg_color[currentPage]} text-white py-2 px-6 rounded-md font-montserrat font-bold text-sm sm:text-lg`}
@@ -143,11 +143,13 @@ const Layout = ({ children }: LayoutProps) => {
   }, [children]); // Will only re-run if children changes
 
   return (
-    <div className={"LAYOUT relative h-screen w-screen flex flex-col"}>
+    <div
+      className={"LAYOUT relative h-screen w-screen flex flex-col items-center"}
+    >
       <DesignCanvas />
       {/* scroll container */}
       <main
-        className="relative z-1 h-full w-full overflow-y-auto overflow-x-hidden sm:snap-y sm:snap-mandatory scroll-smooth"
+        className="relative z-1 h-full w-full max-w-[1024px] overflow-y-auto overflow-x-hidden sm:snap-y sm:snap-mandatory scroll-smooth"
         ref={scrollContainerRef}
       >
         {/* Use memoized navbar */}
