@@ -49,9 +49,9 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
     <section
       ref={ref}
       id="contact"
-      className="CONTACT-PAGE snap-start h-screen border border-transparent flex justify-center items-center"
+      className="CONTACT-PAGE snap-start h-screen border border-transparent flex justify-center items-center relative"
     >
-      <div className="CONTAINER w-[80%] flex flex-col">
+      <div className="CONTAINER w-[80%] flex flex-col z-10">
         <h1
           className="text-3xl md:text-5xl xl:text-7xl font-bold tracking-[-0.01em]
             mb-20 text-orange-500 text-center"

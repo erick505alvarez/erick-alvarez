@@ -14,10 +14,10 @@ const ThirdExperienceSection = forwardRef<
   const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (
     <section
-      className="THIRD-XP-PAGE snap-start h-auto sm:h-screen border border-transparent pb-10 sm:pb-0"
+      className="THIRD-XP-PAGE snap-start h-auto sm:h-screen border border-transparent pb-10 sm:pb-0 relative"
       ref={ref}
     >
-      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-8 px-4 sm:px-0">
+      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-8 px-4 sm:px-0 z-10">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"
