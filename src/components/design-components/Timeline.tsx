@@ -21,7 +21,7 @@ const Timeline = () => {
   };
 
   const line_position = {
-    HERO: "top-20",
+    HERO: "hidden",
     WASY: "top-20",
     MOLEQLAR: "top-0",
     BLACKROCK: "top-0",
@@ -29,7 +29,7 @@ const Timeline = () => {
   };
 
   const point_position = {
-    HERO: "before:top-0",
+    HERO: "before:hidden",
     WASY: "before:top-0",
     MOLEQLAR: "before:top-[30%]",
     BLACKROCK: "before:top-[60%]",

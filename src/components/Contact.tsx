@@ -19,7 +19,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   });
 
   const onSubmit = async (data: FormInputs) => {
-    const FORM_URL = "https://formsubmit.co/erick505alvarez@gmail.com";
+    const FORM_URL = "https://formsubmit.co/8186275090f2c0e05418a62f7bc396aa";
 
     try {
       const res = await fetch(FORM_URL, {
@@ -34,6 +34,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
       alert("Message sent!");
     } catch (error) {
       console.error(error);
+      alert("Error sending message. Please refresh the page and try again.");
     }
   };
 
@@ -45,6 +46,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   return (
     <section
       ref={ref}
+      id="contact"
       className="CONTACT-PAGE snap-start h-screen border border-transparent flex justify-center items-center"
     >
       <div className="CONTAINER w-[80%] flex flex-col">

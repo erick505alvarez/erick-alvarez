@@ -37,7 +37,7 @@ const ThirdExperienceSection = forwardRef<
               />
             </div>
             {/* internship photo */}
-            <div className="IMG-WRAPPER absolute -bottom-[17%] right-0 w-[18rem] h-[20rem] overflow-hidden">
+            <div className="IMG-WRAPPER absolute -bottom-[10%] right-0 w-[18rem] h-[20rem] overflow-hidden">
               <StaticImage
                 className="w-full h-full rounded-lg"
                 src="../../images/blackrock.jpg"
@@ -57,7 +57,7 @@ const ThirdExperienceSection = forwardRef<
               <span className="font-bold">Python library</span> for BlackRock
               Transition Management’s trading and liquidity strategies.{" "}
             </p>
-            <p className="w-full absolute left-0 top-[45%] -translate-y-10">
+            <p className="w-full absolute left-0 top-[40%] -translate-y-10">
               This initiative <span className="font-bold">automated</span> and{" "}
               <span className="font-bold">optimized</span> the day-to-day
               operations to manage risk over the buying and selling of

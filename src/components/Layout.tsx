@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const { setCurrentPage } = useDesignContext();
+  const { currentPage, setCurrentPage } = useDesignContext();
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   const handleScroll = useCallback(() => {
@@ -51,7 +51,7 @@ const Layout = ({ children }: LayoutProps) => {
   }, [children, setCurrentPage]);
 
   const throttledHandleScroll = useCallback(
-    throttle(handleScroll, 100), // delay of 100ms
+    throttle(handleScroll, 200), // throttled delay of 200ms
     [handleScroll]
   );
 
@@ -68,6 +68,15 @@ const Layout = ({ children }: LayoutProps) => {
     };
   }, [throttledHandleScroll]);
 
+  // navbar
+  const nav_bg_color = {
+    HERO: "bg-orange-500",
+    WASY: "bg-orange-500",
+    MOLEQLAR: "bg-purple-500",
+    BLACKROCK: "bg-yellow-500",
+    CONTACT: "hidden",
+  };
+
   const validChildren = React.Children.toArray(children).filter(
     React.isValidElement
   );
@@ -77,13 +86,15 @@ const Layout = ({ children }: LayoutProps) => {
       <DesignCanvas />
       {/* scroll container */}
       <main
-        className="relative z-1 h-full w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory"
+        className="relative z-1 h-full w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth"
         ref={scrollContainerRef}
       >
         {/* navbar */}
-        <nav className="flex absolute justify-end items-center px-6 h-[80px] w-full">
+        <nav className="flex fixed justify-end items-center px-6 h-[80px] w-full">
           <a href="#contact">
-            <button className="bg-primary text-white py-2 px-6 rounded-md font-montserrat font-bold">
+            <button
+              className={`${nav_bg_color[currentPage]} text-white py-2 px-6 rounded-md font-montserrat font-bold`}
+            >
               Let's Chat
             </button>
           </a>
