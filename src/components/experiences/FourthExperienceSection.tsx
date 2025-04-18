@@ -1,8 +1,6 @@
 import React, { forwardRef, memo } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-// import SkillCard from "../SkillCard";
-
 interface FourthExperienceSectionProps {}
 
 const FourthExperienceSection = forwardRef<
@@ -11,20 +9,9 @@ const FourthExperienceSection = forwardRef<
 >((props, ref) => {
   console.log("FourthExperienceSection component rendered");
 
-  const skills = [
-    "React",
-    "JavaScript",
-    "Express",
-    "GraphQL",
-    "Jest",
-    "React Testing Library",
-    "Supabase",
-    "PostgreSQL",
-    "Figma",
-  ];
   return (
     <section
-      className="SECOND-XP-PAGE snap-start sm:min-h-screen sm:pb-12  border border-transparent relative"
+      className="SECOND-XP-PAGE snap-start min-h-screen sm:pb-12 border border-transparent relative"
       ref={ref}
     >
       <div className="CONTAINER relative sm:w-[70%] md:w-[80%] sm:ml-32 mt-16 sm:mt-16 md:ml-32 px-4 sm:px-0 z-10">
@@ -34,36 +21,69 @@ const FourthExperienceSection = forwardRef<
         >
           Hobbies & Interests
         </h1>
-        {/* <div className="PROJECT-EXHIBIT bg-gray-700 w-full h-[15rem] sm:h-[30rem] rounded-xl flex justify-center items-center mb-4 mt-auto overflow-hidden"> */}
-        {/* <div className="IMG-CONTAINER relative w-[90%] max-w-[20rem] sm:max-w-[32rem] md:max-w-[40rem] flex flex-grow-0 items-center">
-            <StaticImage
-              className="object-contain w-full flex-shrink-0"
-              src="../../images/mockups/moleqlar/moleqlar-mockup.png"
-              alt="moleqlar mockup"
-              placeholder="blurred"
-              // width={800}
-            />
-          </div> */}
-        {/* <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] -translate-x-24 translate-y-10 mt-4">
-            <StaticImage
-              className="object-contain w-full flex-shrink-0"
-              src="../../images/mockups/wasy/wasy-exhibit-mobile.png"
-              alt="product mockup"
-              placeholder="blurred"
-              // width={800}
-            />
-          </div> */}
-        {/* </div> */}
-        {/* <div className="SKILLS-CONTAINER flex w-full gap-1 sm:gap-2 flex-wrap mb-4 sm:mb-8">
-          {skills.map((skill, ix) => {
-            return <SkillCard key={skill} skill={skill} />;
-          })}
-        </div> */}
+        <div className="grid grid-cols-1 grid-rows-[30rem_20rem_30rem] md:grid-cols-[45%_55%] md:grid-rows-[20rem_20rem] lg:grid-rows-[15rem_25rem] gap-2">
+          {/* Music production */}
+          <div className="relative w-full h-full overflow-hidden rounded-lg md:row-span-2">
+            {/* Image component */}
+            <div className="absolute inset-0 top-0 bottom-0 left-0 right-0 w-full h-full">
+              <StaticImage
+                className="w-full h-full object-cover"
+                src="../../images/music-production.jpg"
+                alt="Music production setup"
+                placeholder="blurred"
+              />
+            </div>
+            {/* Overlay/Content */}
+            <div className="group hover:flex absolute inset-0 top-0 bottom-0 left-0 right-0 z-20 bg-black bg-opacity-10 hover:bg-opacity-50 items-center justify-center">
+              <h3 className="text-white text-2xl font-bold invisible group-hover:visible">
+                Music Production
+              </h3>
+            </div>
+          </div>
+
+          {/* Photography */}
+          <div className="relative w-full h-full overflow-hidden rounded-lg">
+            {/* Image component */}
+            <div className="absolute inset-0 top-0 bottom-0 left-0 right-0 w-full h-full">
+              <StaticImage
+                className="w-full h-full object-cover"
+                src="../../images/photography.jpg"
+                alt="Photography samples"
+                placeholder="blurred"
+              />
+            </div>
+            {/* Overlay/Content */}
+            <div className="group hover:flex absolute inset-0 top-0 bottom-0 left-0 right-0 z-20 bg-black bg-opacity-10 hover:bg-opacity-50 items-center justify-center">
+              <h3 className="text-white text-2xl font-bold invisible group-hover:visible">
+                Photography
+              </h3>
+            </div>
+          </div>
+
+          {/* Desca */}
+          <div className="relative w-full h-full overflow-hidden rounded-lg">
+            {/* Image component */}
+            <div className="absolute inset-0 top-0 bottom-0 left-0 right-0 w-full h-full">
+              <StaticImage
+                className="w-full h-full object-cover"
+                src="../../images/desca.jpg"
+                alt="Desca image"
+                placeholder="blurred"
+              />
+            </div>
+            {/* Overlay/Content */}
+            <div className="group hover:flex absolute inset-0 top-0 bottom-0 left-0 right-0 z-20 bg-black bg-opacity-10 hover:bg-opacity-50 items-center justify-center">
+              <h3 className="text-white text-2xl font-bold invisible group-hover:visible">
+                Private Label
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
 });
 
-FourthExperienceSection.displayName = "Second Experience Section";
+FourthExperienceSection.displayName = "FourthExperienceSection";
 
 export default memo(FourthExperienceSection);

@@ -29,7 +29,7 @@ const FirstExperienceSection = forwardRef<
 
   return (
     <section
-      className="FIRST-XP-PAGE snap-start h-auto sm:min-h-screen sm:pb-12 border border-transparent relative"
+      className="FIRST-XP-PAGE snap-start h-dvh sm:min-h-screen sm:pb-12 border border-transparent relative"
       id="wasy"
       ref={ref}
     >
