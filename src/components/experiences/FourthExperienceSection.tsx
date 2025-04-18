@@ -41,7 +41,7 @@ const FourthExperienceSection = forwardRef<
         >
           Hobbies & Interests
         </h1>
-        <div className="grid grid-cols-1 grid-rows-[30rem_20rem_30rem] md:grid-cols-[45%_55%] md:grid-rows-[20rem_20rem] lg:grid-rows-[15rem_25rem] gap-2">
+        <div className="grid grid-cols-1 grid-rows-[30rem_20rem_30rem] md:grid-cols-[45%_55%] md:grid-rows-[20rem_20rem] lg:grid-rows-[15rem_25rem] gap-2 font-montserrat">
           {/* Music production */}
           <div
             onClick={handleClick}
