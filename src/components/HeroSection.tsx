@@ -56,7 +56,7 @@ const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
           </p>
           <a
             href="#wasy"
-            className="flex w-min min-w-32 justify-center items-center font-semibold tracking-wide font-outfit border-none py-2 px-6 rounded-md text-white bg-primary text-md md:text-xl"
+            className="flex w-max min-w-32 justify-center items-center font-semibold tracking-wide font-outfit border-none py-2 px-6 rounded-md text-white bg-primary text-md md:text-xl"
           >
             My Work
           </a>
