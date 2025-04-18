@@ -32,7 +32,7 @@ const SecondExperienceSection = forwardRef<
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"
         >
-          moleQLar
+          moleQLar (Open Source)
         </h1>
         <div className="PROJECT-EXHIBIT bg-gray-700 w-full h-[15rem] sm:h-[30rem] rounded-xl flex justify-center items-center mb-4 mt-auto overflow-hidden">
           <div className="IMG-CONTAINER wasy-img-dashboard relative w-[90%] max-w-[20rem] sm:max-w-[32rem] md:max-w-[40rem] flex flex-grow-0 items-center">

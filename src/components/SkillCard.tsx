@@ -13,6 +13,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
     WASY: "bg-orange-300",
     MOLEQLAR: "bg-purple-400",
     BLACKROCK: "bg-yellow-500",
+    HOBBIES: "bg-blue-500",
     CONTACT: "bg-orange-500",
   };
 

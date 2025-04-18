@@ -13,6 +13,7 @@ const DesignCanvas = () => {
     WASY: "bg-orange-100",
     MOLEQLAR: "bg-white",
     BLACKROCK: "bg-white",
+    HOBBIES: "bg-blue-100",
     CONTACT: "bg-orange-100",
   };
 
@@ -21,6 +22,7 @@ const DesignCanvas = () => {
     WASY: "bg-orange-200",
     MOLEQLAR: "bg-purple-200",
     BLACKROCK: "bg-yellow-200",
+    HOBBIES: "bg-blue-200",
     CONTACT: "bg-orange-200",
   };
 
@@ -28,8 +30,9 @@ const DesignCanvas = () => {
   const square_styles_1 = {
     HERO: "top-[55%] left-[20%] sm:top-[75%] sm:left-[25%]",
     WASY: "top-[3%] left-[20%] sm:top-[25%] sm:left-[45%]",
-    MOLEQLAR: "top-[7%] left-[17%] top-[125%] left-[145%]",
+    MOLEQLAR: "top-[7%] left-[17%] sm:top-[125%] sm:left-[145%]",
     BLACKROCK: "top-[90%] left-[20%]",
+    HOBBIES: "top-[7%] left-[17%] top-[125%] left-[145%]",
     CONTACT: "top-[20%] left-[20%]",
   };
   const square_styles_2 = {
@@ -37,6 +40,7 @@ const DesignCanvas = () => {
     WASY: "top-[25%] left-[45%]",
     MOLEQLAR: "top-[125%] left-[145%]",
     BLACKROCK: "top-[95%] left-[30%]",
+    HOBBIES: "top-[7%] left-[17%] top-[125%] left-[145%]",
     CONTACT: "top-[60%] left-[10%]",
   };
   const square_styles_3 = {
@@ -44,6 +48,7 @@ const DesignCanvas = () => {
     WASY: "top-[80%] left-[80%]",
     MOLEQLAR: "top-[90%] sm:top-[80%] left-[80%]",
     BLACKROCK: "top-[20%] left-[50%]",
+    HOBBIES: "top-[7%] left-[17%] top-[125%] left-[145%]",
     CONTACT: "top-[60%] left-[80%]",
   };
   const square_styles_4 = {
@@ -51,6 +56,7 @@ const DesignCanvas = () => {
     WASY: "top-[90%] left-[50%]",
     MOLEQLAR: "top-[87%] left-[40%] sm:top-[78%] sm:left-[40%]",
     BLACKROCK: "top-[50%] left-[48%]",
+    HOBBIES: "top-[7%] left-[17%] top-[125%] left-[145%]",
     CONTACT: "top-[90%] left-[20%] sm:top-[90%] sm:left-[25%]",
   };
 
@@ -60,6 +66,7 @@ const DesignCanvas = () => {
     WASY: "top-[5%] left-[85%]",
     MOLEQLAR: "top-[55%] left-[86%]",
     BLACKROCK: "top-[75%] left-[75%]",
+    HOBBIES: "top-[7%] left-[17%] top-[125%] left-[145%]",
     CONTACT: "top-[10%] left-[90%] sm:top-[10%] sm:left-[80%]",
   };
   const grid_square_styles_2 = {
@@ -67,6 +74,7 @@ const DesignCanvas = () => {
     WASY: "top-[105%] left-[185%]",
     MOLEQLAR: "top-[155%] left-[186%]",
     BLACKROCK: "top-[10%] left-[80%]",
+    HOBBIES: "top-[155%] left-[186%]",
     CONTACT: "top-[75%] left-[87%] top-[75%] sm:left-[85%]",
   };
   const grid_square_styles_3 = {
@@ -74,6 +82,7 @@ const DesignCanvas = () => {
     WASY: "top-[105%] left-[185%]",
     MOLEQLAR: "top-[155%] left-[186%]",
     BLACKROCK: "top-[110%] left-[180%]",
+    HOBBIES: "top-[155%] left-[186%]",
     CONTACT: "top-[30%] -left-[20%] sm:top-[30%] sm:left-[10%]",
   };
 

@@ -48,6 +48,7 @@ const NavBar = React.memo(function NavBar({
     WASY: "bg-orange-500",
     MOLEQLAR: "bg-purple-400",
     BLACKROCK: "bg-yellow-500",
+    HOBBIES: "bg-blue-500",
     CONTACT: "hidden",
   };
 
@@ -78,6 +79,7 @@ const Layout = ({ children }: LayoutProps) => {
       PAGES.WASY,
       PAGES.MOLEQLAR,
       PAGES.BLACKROCK,
+      PAGES.HOBBIES,
       PAGES.CONTACT,
     ],
     []

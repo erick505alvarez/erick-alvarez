@@ -9,6 +9,7 @@ const Timeline = () => {
     WASY: "sm:bg-orange-200",
     MOLEQLAR: "sm:bg-purple-200",
     BLACKROCK: "sm:bg-yellow-200",
+    HOBBIES: "sm:bg-blue-300",
     CONTACT: "sm:bg-orange-200",
   };
 
@@ -17,6 +18,7 @@ const Timeline = () => {
     WASY: "sm:before:bg-orange-500",
     MOLEQLAR: "sm:before:bg-purple-500",
     BLACKROCK: "sm:before:bg-yellow-500",
+    HOBBIES: "sm:before:bg-blue-500",
     CONTACT: "sm:before:bg-orange-500",
   };
 
@@ -25,14 +27,16 @@ const Timeline = () => {
     WASY: "sm:top-20",
     MOLEQLAR: "sm:top-0",
     BLACKROCK: "sm:top-0",
+    HOBBIES: "sm:top-0",
     CONTACT: "sm:bottom-20",
   };
 
   const point_position = {
     HERO: "sm:before:hidden",
     WASY: "sm:before:top-0",
-    MOLEQLAR: "sm:before:top-[30%]",
-    BLACKROCK: "sm:before:top-[60%]",
+    MOLEQLAR: "sm:before:top-[25%]",
+    BLACKROCK: "sm:before:top-[50%]",
+    HOBBIES: "sm:before:top-[75%]",
     CONTACT: "sm:before:bottom-0 sm:before:translate-y-0",
   };
 
