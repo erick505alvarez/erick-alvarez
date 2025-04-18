@@ -31,4 +31,38 @@ const Home: React.FC<PageProps> = () => {
 
 export default Home;
 
-export const Head: HeadFC = () => <title>Erick Alvarez</title>;
+export const Head: HeadFC = () => (
+  <>
+    <title>Erick Alvarez</title>
+    <meta
+      name="description"
+      content="Erick Alvarez's personal portfolio showcasing his work, experience, and hobbies."
+    />
+    {/* Open Graph Meta Tags */}
+    <meta property="og:title" content="Erick Alvarez" />
+    <meta
+      property="og:description"
+      content="Explore Erick Alvarez's portfolio, featuring projects, experiences, and hobbies."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://erickalvarez.info/" />
+    <meta
+      property="og:image"
+      content="https://erickalvarez.info/images/og-image.webp"
+    />
+    <meta property="og:image:alt" content="Erick Alvarez's Portfolio" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    {/* Twitter Meta Tags */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Erick Alvarez - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore Erick Alvarez's portfolio, featuring projects, experiences, and hobbies."
+    />
+    <meta
+      name="twitter:image"
+      content="https://erickalvarez.info/images/og-image.webp"
+    />
+  </>
+);
