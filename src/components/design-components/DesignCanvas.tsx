@@ -10,7 +10,7 @@ const DesignCanvas = () => {
 
   const bg_colors = {
     // HERO: "bg-orange-100",
-    HERO: "bg-red-200",
+    HERO: "bg-orange-100",
     WASY: "bg-orange-100",
     MOLEQLAR: "bg-white",
     BLACKROCK: "bg-white",

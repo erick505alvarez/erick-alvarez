@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const { currentPage, setCurrentPage } = useDesignContext();
+  const { setCurrentPage } = useDesignContext();
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   const handleScroll = useCallback(() => {
