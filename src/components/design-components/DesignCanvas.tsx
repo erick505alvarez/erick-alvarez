@@ -1,15 +1,16 @@
 import React from "react";
-import SquareGrid from "./design-components/SquareGrid";
-import SingleSquare from "./design-components/SingleSquare";
-import Timeline from "./design-components/Timeline";
-import { useDesignContext } from "../contexts/DesignContext";
-import "../styles/design.css";
+import SquareGrid from "./SquareGrid";
+import SingleSquare from "./SingleSquare";
+import Timeline from "./Timeline";
+import { useDesignContext } from "../../contexts/DesignContext";
+import "../../styles/design.css";
 
 const DesignCanvas = () => {
   const { currentPage } = useDesignContext();
 
   const bg_colors = {
-    HERO: "bg-orange-100",
+    // HERO: "bg-orange-100",
+    HERO: "bg-red-200",
     WASY: "bg-orange-100",
     MOLEQLAR: "bg-white",
     BLACKROCK: "bg-white",

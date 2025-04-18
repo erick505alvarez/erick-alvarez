@@ -1,8 +1,7 @@
 import React, { ReactNode, useCallback, useEffect, useRef } from "react";
-import DesignCanvas from "./DesignCanvas";
+import DesignCanvas from "./design-components/DesignCanvas";
 import { useDesignContext } from "../contexts/DesignContext";
 import { PAGES } from "../types";
-// import "../styles/global.css";
 
 interface LayoutProps {
   children: ReactNode;
@@ -51,30 +50,29 @@ const Layout = ({ children }: LayoutProps) => {
     }
   }, [children, setCurrentPage]);
 
-  const debouncedHandleScroll = useCallback(
-    debounce(handleScroll, 100), // delay of 100ms
+  const throttledHandleScroll = useCallback(
+    throttle(handleScroll, 100), // delay of 100ms
     [handleScroll]
   );
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", debouncedHandleScroll);
+      scrollContainer.addEventListener("scroll", throttledHandleScroll);
     }
 
     return () => {
       if (scrollContainer) {
-        scrollContainer.removeEventListener("scroll", debouncedHandleScroll);
+        scrollContainer.removeEventListener("scroll", throttledHandleScroll);
       }
     };
-  }, [debouncedHandleScroll]);
+  }, [throttledHandleScroll]);
 
   const validChildren = React.Children.toArray(children).filter(
     React.isValidElement
   );
 
   return (
-    // <div className={"LAYOUT h-screen flex-grow overflow-hidden bg-off-white"}>
     <div className={"LAYOUT h-screen w-screen flex flex-col"}>
       <DesignCanvas />
       {/* scroll container */}
@@ -103,19 +101,23 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
-// Simple debounce function
-function debounce<F extends (...args: any[]) => any>(
+// Simple throttle function
+function throttle<F extends (...args: any[]) => any>(
   func: F,
   delay: number
 ): (...args: Parameters<F>) => void {
   let timeoutId: NodeJS.Timeout | null = null;
+  let lastArgs: Parameters<F> | null = null;
+
   return (...args: Parameters<F>) => {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
+    lastArgs = args;
+    if (!timeoutId) {
+      timeoutId = setTimeout(() => {
+        func(...lastArgs!);
+        timeoutId = null;
+        lastArgs = null;
+      }, delay);
     }
-    timeoutId = setTimeout(() => {
-      func(...args);
-    }, delay);
   };
 }
 
