@@ -44,19 +44,19 @@ const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
         {/* ------------------ Hero Text start ------------------ */}
         <div className="HERO-TEXT flex flex-col gap-4 md:gap-10 mb-10 md:mb-0">
           {/* <h1 className="text-4xl md:text-5xl font-semibold tracking-[0.03em]"> */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]">
             Hi, I'm Erick
             <br />
             <span className="text-orange-500 tracking-normal">
               Software Engineer
             </span>
           </h1>
-          <p className="text-light font-montserrat text-lg max-w-[400px]">
+          <p className="text-light font-montserrat text-md md:text-lg max-w-[400px]">
             I love to build things. I love to solve problems.
           </p>
           <a
-            href="#projects"
-            className="flex w-min min-w-36 justify-center items-center font-semibold tracking-wide text-xl font-outfit border-none py-2 px-6 rounded-md text-white bg-primary"
+            href="#wasy"
+            className="flex w-min min-w-32 justify-center items-center font-semibold tracking-wide font-outfit border-none py-2 px-6 rounded-md text-white bg-primary text-md md:text-xl"
           >
             My Work
           </a>

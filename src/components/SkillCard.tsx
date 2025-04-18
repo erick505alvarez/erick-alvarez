@@ -18,7 +18,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
 
   return (
     <div
-      className={`${card_bg_colors[currentPage]} px-3 py-[0.25rem] inline-block text-off-white font-outfit rounded-md text-xl w-max`}
+      className={`${card_bg_colors[currentPage]} px-3 py-[0.25rem] inline-block text-off-white font-outfit rounded-md text-xs sm:text-xl w-max`}
     >
       {skill}
     </div>

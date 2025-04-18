@@ -30,9 +30,10 @@ const FirstExperienceSection = forwardRef<
   return (
     <section
       className="FIRST-XP-PAGE snap-start h-screen border border-transparent"
+      id="wasy"
       ref={ref}
     >
-      <div className="CONTAINER w-[80%] ml-32 mt-8">
+      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-8 px-4">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4
@@ -40,8 +41,8 @@ const FirstExperienceSection = forwardRef<
         >
           Wasy.ai
         </h1>
-        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-around overflow-hidden">
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[75%] mt-6 ml-12">
+        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[15rem] rounded-xl flex mb-4 mt-auto overflow-hidden">
+          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[70%] mt-2 ml-2 sm:mt-6 sm:ml-12">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
               src="../../images/mockups/wasy/wasy-exhibit-desktop.png"
@@ -50,7 +51,7 @@ const FirstExperienceSection = forwardRef<
               // width={800}
             />
           </div>
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] -translate-x-24 translate-y-10 mt-4">
+          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] sm:-translate-x-24 sm:translate-y-10 mt-10 sm:mt-4">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
               src="../../images/mockups/wasy/wasy-exhibit-mobile.png"
@@ -60,12 +61,12 @@ const FirstExperienceSection = forwardRef<
             />
           </div>
         </div>
-        <div className="SKILLS-CONTAINER flex w-full gap-2 flex-wrap mb-8">
+        <div className="SKILLS-CONTAINER flex w-full gap-1 sm:gap-2 flex-wrap mb-4 sm:mb-8">
           {skills.map((skill, ix) => {
             return <SkillCard key={skill} skill={skill} />;
           })}
         </div>
-        <p>
+        <p className="text-xs sm:text-lg">
           A platform for e-commerce businesses to automate customer service
           through the use and AI agents and integration with Meta Business
           Portfolios and their associated WhatsApp Business Accounts.

@@ -27,15 +27,15 @@ const SecondExperienceSection = forwardRef<
       className="SECOND-XP-PAGE snap-start h-screen border border-transparent"
       ref={ref}
     >
-      <div className="CONTAINER w-[80%] ml-32 mt-8">
+      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-8 px-4">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"
         >
           moleQLar
         </h1>
-        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-center items-center overflow-hidden">
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[50%] mt-6 ml-12">
+        <div className="PROJECT-EXHIBIT bg-gray-700 w-full h-[15rem] rounded-xl flex justify-center items-center md:block mb-4 mt-auto overflow-hidden">
+          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[70%] sm:mt-6 sm:ml-12">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
               src="../../images/mockups/moleqlar/moleqlar-mock-up-desktop.png"
@@ -54,12 +54,12 @@ const SecondExperienceSection = forwardRef<
             />
           </div> */}
         </div>
-        <div className="SKILLS-CONTAINER flex w-full gap-2 flex-wrap mb-8">
+        <div className="SKILLS-CONTAINER flex w-full gap-1 sm:gap-2 flex-wrap mb-4 sm:mb-8">
           {skills.map((skill, ix) => {
             return <SkillCard key={skill} skill={skill} />;
           })}
         </div>
-        <p>
+        <p className="text-xs sm:text-lg">
           moleQLar offers a powerful, dynamic tool to bypass the monotony of
           writing TypeDef and Resolver functions through the use of a live
           editor to visualize a node graph for your PostgreSQL database. This

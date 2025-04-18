@@ -17,7 +17,7 @@ const ThirdExperienceSection = forwardRef<
       className="THIRD-XP-PAGE snap-start h-screen border border-transparent"
       ref={ref}
     >
-      <div className="CONTAINER w-[80%] h-auto ml-32 mt-8 relative">
+      <div className="CONTAINER sm:w-[80%] h-auto sm:ml-32 mt-8 relative">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"

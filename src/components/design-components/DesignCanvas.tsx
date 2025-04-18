@@ -26,37 +26,37 @@ const DesignCanvas = () => {
 
   // single square styles
   const square_styles_1 = {
-    HERO: "top-[75%] left-[25%]",
-    WASY: "top-[25%] left-[45%]",
-    MOLEQLAR: "top-[125%] left-[145%]",
+    HERO: "top-[55%] left-[20%] sm:top-[75%] sm:left-[25%]",
+    WASY: "top-[3%] left-[20%] sm:top-[25%] sm:left-[45%]",
+    MOLEQLAR: "top-[7%] left-[17%] top-[125%] left-[145%]",
     BLACKROCK: "top-[90%] left-[20%]",
     CONTACT: "top-[20%] left-[20%]",
   };
   const square_styles_2 = {
-    HERO: "top-[25%] left-[45%]",
+    HERO: "top-[40%] left-[80%] sm:top-[25%] sm:left-[45%]",
     WASY: "top-[25%] left-[45%]",
     MOLEQLAR: "top-[125%] left-[145%]",
     BLACKROCK: "top-[95%] left-[30%]",
     CONTACT: "top-[60%] left-[10%]",
   };
   const square_styles_3 = {
-    HERO: "top-[15%] left-[25%]",
+    HERO: "top-[5%] left-[30%] sm:top-[15%] sm:left-[25%]",
     WASY: "top-[80%] left-[80%]",
-    MOLEQLAR: "top-[80%] left-[80%]",
+    MOLEQLAR: "top-[90%] sm:top-[80%] left-[80%]",
     BLACKROCK: "top-[20%] left-[50%]",
     CONTACT: "top-[60%] left-[80%]",
   };
   const square_styles_4 = {
-    HERO: "top-[85%] left-[50%]",
+    HERO: "top-[90%] left-[80%] sm:top-[85%] sm:left-[50%]",
     WASY: "top-[90%] left-[50%]",
-    MOLEQLAR: "top-[78%] left-[40%]",
+    MOLEQLAR: "top-[87%] left-[40%] sm:top-[78%] sm:left-[40%]",
     BLACKROCK: "top-[50%] left-[48%]",
     CONTACT: "top-[90%] left-[25%]",
   };
 
   // grid square styles
   const grid_square_styles_1 = {
-    HERO: "top-[20%] left-[58%]",
+    HERO: "top-[50%] left-[60%] sm:top-[20%] sm:left-[58%]",
     WASY: "top-[5%] left-[85%]",
     MOLEQLAR: "top-[55%] left-[86%]",
     BLACKROCK: "top-[75%] left-[75%]",

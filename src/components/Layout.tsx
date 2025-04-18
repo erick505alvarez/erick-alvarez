@@ -46,7 +46,7 @@ const NavBar = React.memo(function NavBar({
   const nav_bg_color = {
     HERO: "bg-orange-500",
     WASY: "bg-orange-500",
-    MOLEQLAR: "bg-purple-500",
+    MOLEQLAR: "bg-purple-400",
     BLACKROCK: "bg-yellow-500",
     CONTACT: "hidden",
   };
@@ -55,7 +55,7 @@ const NavBar = React.memo(function NavBar({
     <nav className="flex fixed justify-end items-center px-6 h-[80px] w-full">
       <a href="#contact">
         <button
-          className={`${nav_bg_color[currentPage]} text-white py-2 px-6 rounded-md font-montserrat font-bold`}
+          className={`${nav_bg_color[currentPage]} text-white py-2 px-6 rounded-md font-montserrat font-bold text-sm sm:text-lg`}
         >
           Let's Chat
         </button>

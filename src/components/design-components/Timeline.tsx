@@ -5,35 +5,35 @@ const Timeline = () => {
   const { currentPage } = useDesignContext();
 
   const line_color = {
-    HERO: "bg-orange-200",
-    WASY: "bg-orange-200",
-    MOLEQLAR: "bg-purple-200",
-    BLACKROCK: "bg-yellow-200",
-    CONTACT: "bg-orange-200",
+    HERO: "sm:bg-orange-200",
+    WASY: "sm:bg-orange-200",
+    MOLEQLAR: "sm:bg-purple-200",
+    BLACKROCK: "sm:bg-yellow-200",
+    CONTACT: "sm:bg-orange-200",
   };
 
   const point_color = {
-    HERO: "before:bg-orange-500",
-    WASY: "before:bg-orange-500",
-    MOLEQLAR: "before:bg-purple-500",
-    BLACKROCK: "before:bg-yellow-500",
-    CONTACT: "before:bg-orange-500",
+    HERO: "sm:before:bg-orange-500",
+    WASY: "sm:before:bg-orange-500",
+    MOLEQLAR: "sm:before:bg-purple-500",
+    BLACKROCK: "sm:before:bg-yellow-500",
+    CONTACT: "sm:before:bg-orange-500",
   };
 
   const line_position = {
-    HERO: "hidden",
-    WASY: "top-20",
-    MOLEQLAR: "top-0",
-    BLACKROCK: "top-0",
-    CONTACT: "bottom-20",
+    HERO: "sm:hidden",
+    WASY: "sm:top-20",
+    MOLEQLAR: "sm:top-0",
+    BLACKROCK: "sm:top-0",
+    CONTACT: "sm:bottom-20",
   };
 
   const point_position = {
-    HERO: "before:hidden",
-    WASY: "before:top-0",
-    MOLEQLAR: "before:top-[30%]",
-    BLACKROCK: "before:top-[60%]",
-    CONTACT: "before:bottom-0 before:translate-y-0",
+    HERO: "sm:before:hidden",
+    WASY: "sm:before:top-0",
+    MOLEQLAR: "sm:before:top-[30%]",
+    BLACKROCK: "sm:before:top-[60%]",
+    CONTACT: "sm:before:bottom-0 sm:before:translate-y-0",
   };
 
   return (
