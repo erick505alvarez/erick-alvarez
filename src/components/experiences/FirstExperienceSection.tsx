@@ -1,5 +1,6 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, memo } from "react";
 import SkillCard from "../SkillCard";
+
 import { StaticImage } from "gatsby-plugin-image";
 
 interface FirstExperienceSectionProps {}
@@ -8,6 +9,8 @@ const FirstExperienceSection = forwardRef<
   HTMLDivElement,
   FirstExperienceSectionProps
 >((props, ref) => {
+  console.log("FirstExperienceSection component rendered");
+
   const skills = [
     "React",
     "Next.js",
@@ -72,4 +75,6 @@ const FirstExperienceSection = forwardRef<
   );
 });
 
-export default FirstExperienceSection;
+FirstExperienceSection.displayName = "First Experience Section";
+
+export default memo(FirstExperienceSection);

@@ -99,22 +99,18 @@ const DesignCanvas = () => {
       <div className="SINGLE-SQUARES-CONTAINER h-full w-full fixed">
         <SingleSquare
           dimensions={14}
-          bgColorClass={square_bg_colors[currentPage]}
           positionClasses={square_styles_1[currentPage]}
         />
         <SingleSquare
           dimensions={14}
-          bgColorClass={square_bg_colors[currentPage]}
           positionClasses={square_styles_2[currentPage]}
         />
         <SingleSquare
           dimensions={14}
-          bgColorClass={square_bg_colors[currentPage]}
           positionClasses={square_styles_3[currentPage]}
         />
         <SingleSquare
           dimensions={14}
-          bgColorClass={square_bg_colors[currentPage]}
           positionClasses={square_styles_4[currentPage]}
         />
       </div>

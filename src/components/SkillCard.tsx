@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useDesignContext } from "../contexts/DesignContext";
 
 interface SkillCardProps {
@@ -25,4 +25,4 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   );
 };
 
-export default SkillCard;
+export default memo(SkillCard);

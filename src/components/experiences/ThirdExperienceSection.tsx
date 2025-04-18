@@ -1,5 +1,6 @@
+import React, { forwardRef, memo } from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import React, { forwardRef } from "react";
+
 import SkillCard from "../SkillCard";
 
 interface ThirdExperienceSectionProps {}
@@ -8,6 +9,8 @@ const ThirdExperienceSection = forwardRef<
   HTMLDivElement,
   ThirdExperienceSectionProps
 >((props, ref) => {
+  console.log("ThirdExperienceSection component rendered");
+
   const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (
     <section
@@ -76,4 +79,4 @@ const ThirdExperienceSection = forwardRef<
   );
 });
 
-export default ThirdExperienceSection;
+export default memo(ThirdExperienceSection);

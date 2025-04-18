@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, memo } from "react";
 import { useForm } from "react-hook-form";
 
 interface ContactProps {}
@@ -10,6 +10,8 @@ interface FormInputs {
 }
 
 const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
+  console.log("Contact component rendered");
+
   const {
     register,
     handleSubmit,
@@ -51,7 +53,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
     >
       <div className="CONTAINER w-[80%] flex flex-col">
         <h1
-          className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold tracking-[-0.01em]
+          className="text-3xl md:text-5xl xl:text-7xl font-bold tracking-[-0.01em]
             mb-20 text-orange-500 text-center"
         >
           Shoot me a message!
@@ -84,7 +86,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 type="text"
                 {...register("name", { required: "Name is required" })}
                 placeholder="Name"
-                className="border-b-2 border-black w-[45%] bg-transparent placeholder:text-gray-400"
+                className="border-b-2 border-black w-[45%] bg-transparent placeholder:text-gray-600"
               />
               <input
                 type="email"
@@ -96,7 +98,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                   },
                 })}
                 placeholder="Email"
-                className="border-b-2 border-black w-[45%] bg-transparent placeholder:text-gray-400"
+                className="border-b-2 border-black w-[45%] bg-transparent placeholder:text-gray-600"
               />
             </div>
             <textarea
@@ -105,7 +107,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 minLength: { value: 2, message: "Minimum message length is 2" },
               })}
               placeholder="Message"
-              className="border-b-2 border-black w-full h-60 bg-transparent resize-none placeholder:text-gray-400"
+              className="border-b-2 border-black w-full h-60 bg-transparent resize-none placeholder:text-gray-600"
             ></textarea>
             <div className="w-full pt-16">
               <button className="text-white font-bold text-xl bg-orange-500 py-2 px-4 rounded mx-auto block">
@@ -119,4 +121,6 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   );
 });
 
-export default Contact;
+Contact.displayName = "Contact"; // Important for React DevTools and debugging
+
+export default memo(Contact);
