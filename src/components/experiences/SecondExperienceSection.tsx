@@ -38,7 +38,7 @@ const SecondExperienceSection = forwardRef<
           <div className="IMG-CONTAINER wasy-img-dashboard relative w-[90%] max-w-[20rem] sm:max-w-[32rem] md:max-w-[40rem] flex flex-grow-0 items-center">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
-              src="../../images/mockups/moleqlar/moleqlar-mock-up-desktop.png"
+              src="../../images/mockups/moleqlar/moleqlar-mockup.png"
               alt="moleqlar mockup"
               placeholder="blurred"
               // width={800}
