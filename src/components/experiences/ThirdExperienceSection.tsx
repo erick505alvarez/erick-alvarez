@@ -21,14 +21,13 @@ const ThirdExperienceSection = forwardRef<
         >
           BlackRock
         </h1>
-        <div className="flex h-full">
+        <div className="flex">
           {/* images container */}
-          <div className="IMAGES-CONTAINER relative h-full w-[60%]">
-            <div className="IMG-WRAPPER relative w-full h-full md:max-w-[400px]">
+          <div className="IMAGES-CONTAINER relative w-[70%]">
+            <div className="IMG-WRAPPER relative md:max-w-[450px]">
               <StaticImage
                 // className="w-full h-full flex-shrink-0"
-                className="object-contain rounded-lg h-full"
-                imgStyle={{ maxHeight: "40vh" }}
+                className="rounded-lg"
                 src="../../images/speaker.jpg"
                 alt="BlackRock Panel Discussion"
                 placeholder="blurred"
@@ -37,7 +36,8 @@ const ThirdExperienceSection = forwardRef<
                 aspectRatio={3 / 4} // Replace with the actual aspect ratio of your image
               />
             </div>
-            <div className="IMG-WRAPPER absolute -bottom-[20%] right-0 w-[15rem] h-[17rem] overflow-hidden">
+            {/* internship photo */}
+            <div className="IMG-WRAPPER absolute -bottom-[15%] right-0 w-[18rem] h-[20rem] overflow-hidden">
               <StaticImage
                 className="w-full h-full rounded-lg"
                 src="../../images/blackrock.jpg"
@@ -50,15 +50,15 @@ const ThirdExperienceSection = forwardRef<
             </div>
           </div>
           {/* right side container */}
-          <div className="RIGHT-SIDE relative w-[40%] font-montserrat">
-            <p className="max-w-96 absolute top-[10%] left-[-15%]">
+          <div className="RIGHT-SIDE relative w-[50%] font-montserrat text-xl">
+            <p className="w-full absolute top-[1%] right-0 translate-x-[-2vw]">
               As the technology lead of a global portfolio management team, I
               spearheaded a team effort to author a{" "}
               <span className="font-bold">Python library</span> for BlackRock
               Transition Management’s trading and liquidity strategies.{" "}
             </p>
-            <p className="max-w-96 absolute top-1/2 -translate-y-10">
-              This initiative <span className="font-bold">automated</span> and
+            <p className="w-full absolute left-2 top-[45%] -translate-y-10">
+              This initiative <span className="font-bold">automated</span> and{" "}
               <span className="font-bold">optimized</span> the day-to-day
               operations to manage risk over the buying and selling of
               multi-billion dollars worth of equity, fixed income, FX, futures,
