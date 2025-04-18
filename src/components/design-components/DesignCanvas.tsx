@@ -65,24 +65,25 @@ const DesignCanvas = () => {
     HERO: "top-[50%] left-[60%] sm:top-[20%] sm:left-[58%]",
     WASY: "top-[5%] left-[85%]",
     MOLEQLAR: "top-[55%] left-[86%]",
-    BLACKROCK: "top-[75%] left-[75%]",
-    HOBBIES: "top-[7%] left-[17%] top-[125%] left-[145%]",
+    BLACKROCK: "left-[75%] top-[75%] md:left-[50%] lg:left-[75%]",
+    HOBBIES: "top-[7%] left-[12%]",
     CONTACT: "top-[10%] left-[90%] sm:top-[10%] sm:left-[80%]",
   };
   const grid_square_styles_2 = {
     HERO: "top-[120%] left-[158%]",
     WASY: "top-[105%] left-[185%]",
     MOLEQLAR: "top-[155%] left-[186%]",
-    BLACKROCK: "top-[10%] left-[80%]",
-    HOBBIES: "top-[155%] left-[186%]",
-    CONTACT: "top-[75%] left-[87%] top-[75%] sm:left-[85%]",
+    BLACKROCK:
+      "top-[10%] left-[80%] md:top-[25%] md:left-[65%] lg:top-[10%] lg:left-[80%]",
+    HOBBIES: "top-[60%] left-[85%]",
+    CONTACT: "top-[75%] left-[87%] sm:top-[75%] sm:left-[85%]",
   };
   const grid_square_styles_3 = {
     HERO: "top-[120%] left-[158%]",
     WASY: "top-[105%] left-[185%]",
     MOLEQLAR: "top-[155%] left-[186%]",
     BLACKROCK: "top-[110%] left-[180%]",
-    HOBBIES: "top-[155%] left-[186%]",
+    HOBBIES: "top-[12%] left-[70%]",
     CONTACT: "top-[30%] -left-[20%] sm:top-[30%] sm:left-[10%]",
   };
 

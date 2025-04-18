@@ -151,7 +151,7 @@ const Layout = ({ children }: LayoutProps) => {
       <DesignCanvas />
       {/* scroll container */}
       <main
-        className="relative h-full w-full max-w-[1440px] overflow-y-auto overflow-x-hidden sm:snap-y sm:snap-mandatory scroll-smooth"
+        className="relative h-full w-full max-w-[1440px] overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory scroll-smooth"
         ref={scrollContainerRef}
       >
         {/* Use memoized navbar */}
