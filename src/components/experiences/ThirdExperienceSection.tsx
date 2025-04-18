@@ -19,28 +19,9 @@ const ThirdExperienceSection = forwardRef<
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"
         >
-          moleQLar
+          BlackRock
         </h1>
-        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-around overflow-hidden">
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[75%] mt-6 ml-12">
-            <StaticImage
-              className="object-contain w-full flex-shrink-0"
-              src="../../images/mockups/wasy/wasy-exhibit-desktop.png"
-              alt="product mockup"
-              placeholder="blurred"
-              // width={800}
-            />
-          </div>
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] -translate-x-24 translate-y-10 mt-4">
-            <StaticImage
-              className="object-contain w-full flex-shrink-0"
-              src="../../images/mockups/wasy/wasy-exhibit-mobile.png"
-              alt="product mockup"
-              placeholder="blurred"
-              // width={800}
-            />
-          </div>
-        </div>
+
         <div className="SKILLS-CONTAINER flex w-full gap-2 flex-wrap mb-8">
           {skills.map((skill, ix) => {
             return <SkillCard key={skill} skill={skill} />;

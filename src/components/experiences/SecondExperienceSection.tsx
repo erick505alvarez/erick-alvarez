@@ -32,16 +32,16 @@ const SecondExperienceSection = forwardRef<
           moleQLar
         </h1>
         <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-around overflow-hidden">
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[75%] mt-6 ml-12">
+          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[50%] mt-6 ml-12">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
-              src="../../images/mockups/wasy/wasy-exhibit-desktop.png"
-              alt="product mockup"
+              src="../../images/mockups/moleqlar/moleqlar-mock-up-desktop.png"
+              alt="moleqlar mockup"
               placeholder="blurred"
               // width={800}
             />
           </div>
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] -translate-x-24 translate-y-10 mt-4">
+          {/* <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] -translate-x-24 translate-y-10 mt-4">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
               src="../../images/mockups/wasy/wasy-exhibit-mobile.png"
@@ -49,7 +49,7 @@ const SecondExperienceSection = forwardRef<
               placeholder="blurred"
               // width={800}
             />
-          </div>
+          </div> */}
         </div>
         <div className="SKILLS-CONTAINER flex w-full gap-2 flex-wrap mb-8">
           {skills.map((skill, ix) => {
@@ -57,9 +57,12 @@ const SecondExperienceSection = forwardRef<
           })}
         </div>
         <p>
-          A platform for e-commerce businesses to automate customer service
-          through the use and AI agents and integration with Meta Business
-          Portfolios and their associated WhatsApp Business Accounts.
+          moleQLar offers a powerful, dynamic tool to bypass the monotony of
+          writing TypeDef and Resolver functions through the use of a live
+          editor to visualize a node graph for your PostgreSQL database. This
+          tool automatically generates the required code for your GraphQL
+          implementation. This innovative solution allows developers to focus on
+          the benefits of GraphQL while outsourcing the code repetition.
         </p>
       </div>
     </section>

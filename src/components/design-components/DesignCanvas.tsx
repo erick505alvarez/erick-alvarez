@@ -18,7 +18,7 @@ const DesignCanvas = () => {
 
   const square_bg_colors = {
     HERO: "bg-orange-200",
-    WASY: "bg-orange-300",
+    WASY: "bg-orange-200",
     MOLEQLAR: "bg-purple-200",
     BLACKROCK: "bg-yellow-200",
     CONTACT: "bg-orange-200",
@@ -34,7 +34,10 @@ const DesignCanvas = () => {
     <div
       className={`DESIGN-CANVAS w-full z-0 top-0 bottom-0 left-0 right-0 ${section_bg_colors[currentPage]}`}
     >
-      <SquareGrid gridDimensions={100} />
+      <SquareGrid
+        gridDimensions={100}
+        bgColorClass={square_bg_colors[currentPage]}
+      />
       <div className="SINGLE-SQUARES-CONTAINER h-full w-full fixed">
         <SingleSquare
           dimensions={14}
