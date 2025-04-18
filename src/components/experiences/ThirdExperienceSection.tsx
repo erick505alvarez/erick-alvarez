@@ -8,17 +8,7 @@ const ThirdExperienceSection = forwardRef<
   HTMLDivElement,
   ThirdExperienceSectionProps
 >((props, ref) => {
-  const skills = [
-    "React",
-    "JavaScript",
-    "Express",
-    "GraphQL",
-    "Jest",
-    "React Testing Library",
-    "Supabase",
-    "PostgreSQL",
-    "Figma",
-  ];
+  const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (
     <section
       className="THIRD-XP-PAGE snap-start h-screen border border-transparent"
@@ -53,9 +43,7 @@ const ThirdExperienceSection = forwardRef<
         </div>
         <div className="SKILLS-CONTAINER flex w-full gap-2 flex-wrap mb-8">
           {skills.map((skill, ix) => {
-            return (
-              <SkillCard key={skill} skill={skill} color={"bg-orange-300"} />
-            );
+            return <SkillCard key={skill} skill={skill} />;
           })}
         </div>
         <p>

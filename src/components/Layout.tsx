@@ -92,7 +92,7 @@ const Layout = ({ children }: LayoutProps) => {
         {validChildren.map((child, index) =>
           React.cloneElement(child as React.ReactElement, {
             ref: (el: HTMLElement | null) => (sectionRefs.current[index] = el),
-            key: index,
+            key: child.key, // defined in index.tsx
           })
         )}
         {/* footer */}

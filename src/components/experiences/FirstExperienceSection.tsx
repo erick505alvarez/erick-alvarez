@@ -59,9 +59,7 @@ const FirstExperienceSection = forwardRef<
         </div>
         <div className="SKILLS-CONTAINER flex w-full gap-2 flex-wrap mb-8">
           {skills.map((skill, ix) => {
-            return (
-              <SkillCard key={skill} skill={skill} color={"bg-orange-300"} />
-            );
+            return <SkillCard key={skill} skill={skill} />;
           })}
         </div>
         <p>
