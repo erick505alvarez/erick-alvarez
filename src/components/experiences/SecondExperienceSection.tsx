@@ -24,7 +24,7 @@ const SecondExperienceSection = forwardRef<
   ];
   return (
     <section
-      className="SECOND-XP-PAGE snap-start sm:h-screen border border-transparent relative"
+      className="SECOND-XP-PAGE snap-start sm:h-screen md:min-h-screen border border-transparent relative"
       ref={ref}
     >
       <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-16 md:ml-32 px-4 sm:px-0 z-10">

@@ -14,11 +14,11 @@ const ThirdExperienceSection = forwardRef<
   const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (
     <section
-      className="THIRD-XP-PAGE snap-start h-auto sm:h-screen border border-transparent pb-10 sm:pb-0 relative"
+      className="THIRD-XP-PAGE flex flex-col justify-start snap-start h-auto sm:h-screen border border-transparent pb-10 sm:pb-0 relative"
       ref={ref}
     >
       {/* page container */}
-      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-16 px-4 sm:px-0 z-10">
+      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-16 px-4 sm:px-0 z-10 flex-grow flex flex-col">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"
@@ -26,7 +26,8 @@ const ThirdExperienceSection = forwardRef<
           BlackRock
         </h1>
         {/* content container */}
-        <div className="flex flex-col lg:flex-row">
+        {/* <div className="flex flex-col justify-center flex-grow"> */}
+        <div className="flex flex-col lg:flex-row md:justify-center">
           {/* images container */}
           <div className="IMAGES-CONTAINER flex flex-col relative md:h-[42rem] h-auto lg:w-[70%]">
             <div className="IMG-WRAPPER relative md:max-w-[22rem] lg:max-w-[28rem] mb-2 sm:mb-0">
@@ -59,7 +60,7 @@ const ThirdExperienceSection = forwardRef<
           </div>
           {/* right side container */}
           <div className="RIGHT-SIDE relative w-full lg:w-[50%] font-montserrat text-xl">
-            <div className="SKILLS-CONTAINER md:absolute md:-top-40 w-full my-4 sm:my-0 sm:w-auto lg:bottom-0 lg:left-4 flex sm:flex-col gap-2 flex-wrap">
+            <div className="SKILLS-CONTAINER md:absolute md:-top-40 w-full my-4 sm:my-0 sm:w-auto lg:top-auto lg:bottom-0 lg:left-4 flex sm:flex-col gap-2 flex-wrap">
               {skills.map((skill, ix) => {
                 return <SkillCard key={skill} skill={skill} />;
               })}
@@ -80,6 +81,7 @@ const ThirdExperienceSection = forwardRef<
           </div>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 });
