@@ -38,10 +38,10 @@ const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
 
     return (
       <section
-        className="HERO-CONTAINER relative snap-start flex flex-col md:flex-row justify-around items-center py-20 md:py-40 pb-24 md:pb-36 px-6 aspect-[16/9] min-h-screen w-full"
+        className="HERO-CONTAINER relative snap-start flex flex-col md:flex-row justify-around items-center py-20 md:py-40 pb-24 md:pb-36 px-6 aspect-[16/9] h-screen w-full"
         ref={ref}
       >
-        <div className="z-10 w-full h-full flex flex-col md:flex-row justify-around items-center">
+        <div className="z-10 w-full h-full flex flex-col md:flex-row justify-start md:justify-around items-center mt-20 md:mt-0">
           {/* ------------------ Hero Text start ------------------ */}
           <div className="HERO-TEXT flex flex-col gap-4 md:gap-10 mb-10 md:mb-0">
             {/* <h1 className="text-4xl md:text-5xl font-semibold tracking-[0.03em]"> */}
