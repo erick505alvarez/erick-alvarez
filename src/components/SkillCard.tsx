@@ -10,8 +10,8 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
 
   const card_bg_colors = {
     HERO: "bg-orange-500",
-    WASY: "bg-orange-500",
-    MOLEQLAR: "bg-purple-500",
+    WASY: "bg-orange-300",
+    MOLEQLAR: "bg-purple-400",
     BLACKROCK: "bg-yellow-500",
     CONTACT: "bg-orange-500",
   };

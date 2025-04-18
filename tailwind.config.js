@@ -25,7 +25,8 @@ module.exports = {
         purple: {
           500: "#D773FF",
           300: "#D695F0",
-          200: "#F6E6FC",
+          200: "#EDC5FD",
+          100: "#F6E6FC",
         },
       },
       fontFamily: {

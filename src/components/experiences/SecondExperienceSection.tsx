@@ -31,7 +31,7 @@ const SecondExperienceSection = forwardRef<
         >
           moleQLar
         </h1>
-        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-around overflow-hidden">
+        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-center items-center overflow-hidden">
           <div className="IMG-CONTAINER wasy-img-dashboard relative w-[50%] mt-6 ml-12">
             <StaticImage
               className="object-contain w-full flex-shrink-0"

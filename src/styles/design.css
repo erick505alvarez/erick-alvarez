@@ -12,8 +12,8 @@
 .square-grid-container {
     position: fixed;
     z-index: -1;
-    top: 20%;
-    left: 58%;
+    /* top: 20%;
+    left: 58%; */
     width: var(--grid-dimensions);
     height: var(--grid-dimensions);
     display: grid;
@@ -34,18 +34,15 @@
     height: var(--dimensions);
 }
 
-.single-square:nth-child(1) {
-    /* background-color: red; */
+/* .single-square:nth-child(1) {
     top: 75%;
     left: 25%;
 }
 .single-square:nth-child(2) {
-    /* background-color: red; */
     top: 25%;
     left: 45%;
 }
 .single-square:nth-child(3) {
-    /* background-color: red; */
     top: 15%;
     left: 25%;
-}
+} */
