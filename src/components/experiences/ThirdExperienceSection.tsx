@@ -14,7 +14,7 @@ const ThirdExperienceSection = forwardRef<
   const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (
     <section
-      className="THIRD-XP-PAGE flex flex-col justify-start snap-start h-auto sm:min-h-screen sm:pb-12
+      className="THIRD-XP-PAGE flex flex-col justify-start md:snap-start h-auto sm:min-h-screen sm:pb-12
       border border-transparent pb-10 lg:pb-0 relative z-10"
       ref={ref}
     >
