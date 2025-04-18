@@ -19,7 +19,8 @@
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(5, 20%);
-    grid-gap: 10px;
+    grid-gap: calc(var(--grid-dimensions) / 10);
+    /* grid-gap: 10px; */
 }
 
 .grid-square {

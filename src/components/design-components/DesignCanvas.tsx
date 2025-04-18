@@ -24,40 +24,34 @@ const DesignCanvas = () => {
     CONTACT: "bg-orange-200",
   };
 
-  // HERO = "HERO",
-  // WASY = "WASY",
-  // MOLEQLAR = "MOLEQLAR",
-  // BLACKROCK = "BLACKROCK",
-  // CONTACT = "CONTACT",
-
   // single square styles
   const square_styles_1 = {
     HERO: "top-[75%] left-[25%]",
     WASY: "top-[25%] left-[45%]",
     MOLEQLAR: "top-[125%] left-[145%]",
     BLACKROCK: "top-[90%] left-[20%]",
-    CONTACT: "",
+    CONTACT: "top-[20%] left-[20%]",
   };
   const square_styles_2 = {
     HERO: "top-[25%] left-[45%]",
     WASY: "top-[25%] left-[45%]",
     MOLEQLAR: "top-[125%] left-[145%]",
     BLACKROCK: "top-[95%] left-[30%]",
-    CONTACT: "",
+    CONTACT: "top-[60%] left-[10%]",
   };
   const square_styles_3 = {
     HERO: "top-[15%] left-[25%]",
     WASY: "top-[80%] left-[80%]",
     MOLEQLAR: "top-[80%] left-[80%]",
     BLACKROCK: "top-[20%] left-[50%]",
-    CONTACT: "",
+    CONTACT: "top-[60%] left-[80%]",
   };
   const square_styles_4 = {
     HERO: "top-[85%] left-[50%]",
     WASY: "top-[90%] left-[50%]",
     MOLEQLAR: "top-[78%] left-[40%]",
     BLACKROCK: "top-[50%] left-[48%]",
-    CONTACT: "",
+    CONTACT: "top-[90%] left-[25%]",
   };
 
   // grid square styles
@@ -66,14 +60,21 @@ const DesignCanvas = () => {
     WASY: "top-[5%] left-[85%]",
     MOLEQLAR: "top-[55%] left-[86%]",
     BLACKROCK: "top-[75%] left-[75%]",
-    CONTACT: "",
+    CONTACT: "top-[10%] left-[80%]",
   };
   const grid_square_styles_2 = {
     HERO: "top-[120%] left-[158%]",
     WASY: "top-[105%] left-[185%]",
     MOLEQLAR: "top-[155%] left-[186%]",
     BLACKROCK: "top-[10%] left-[80%]",
-    CONTACT: "",
+    CONTACT: "top-[75%] left-[85%]",
+  };
+  const grid_square_styles_3 = {
+    HERO: "top-[120%] left-[158%]",
+    WASY: "top-[105%] left-[185%]",
+    MOLEQLAR: "top-[155%] left-[186%]",
+    BLACKROCK: "top-[110%] left-[180%]",
+    CONTACT: "top-[30%] left-[10%]",
   };
 
   return (
@@ -86,9 +87,14 @@ const DesignCanvas = () => {
         positionClasses={grid_square_styles_1[currentPage]}
       />
       <SquareGrid
-        gridDimensions={100}
+        gridDimensions={70}
         bgColorClass={square_bg_colors[currentPage]}
         positionClasses={grid_square_styles_2[currentPage]}
+      />
+      <SquareGrid
+        gridDimensions={80}
+        bgColorClass={square_bg_colors[currentPage]}
+        positionClasses={grid_square_styles_3[currentPage]}
       />
       <div className="SINGLE-SQUARES-CONTAINER h-full w-full fixed">
         <SingleSquare
