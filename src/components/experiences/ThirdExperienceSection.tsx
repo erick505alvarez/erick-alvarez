@@ -1,41 +1,35 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React, { forwardRef } from "react";
 import SkillCard from "../SkillCard";
-import { StaticImage } from "gatsby-plugin-image";
 
-interface FirstExperienceSectionProps {}
+interface ThirdExperienceSectionProps {}
 
-const FirstExperienceSection = forwardRef<
+const ThirdExperienceSection = forwardRef<
   HTMLDivElement,
-  FirstExperienceSectionProps
+  ThirdExperienceSectionProps
 >((props, ref) => {
   const skills = [
     "React",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
+    "JavaScript",
     "Express",
-    "Docker",
-    "Redis",
-    "WebSockets",
+    "GraphQL",
+    "Jest",
+    "React Testing Library",
     "Supabase",
     "PostgreSQL",
-    "Jest",
     "Figma",
-    "React Query",
   ];
-
   return (
     <section
-      className="FIRST-XP-PAGE snap-start h-screen border border-transparent"
+      className="SECOND-XP-PAGE snap-start h-screen border border-transparent"
       ref={ref}
     >
       <div className="CONTAINER w-[80%] ml-32 mt-8">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
-            mb-4
-        "
+            mb-4"
         >
-          Wasy.ai
+          moleQLar
         </h1>
         <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-around overflow-hidden">
           <div className="IMG-CONTAINER wasy-img-dashboard relative w-[75%] mt-6 ml-12">
@@ -74,4 +68,4 @@ const FirstExperienceSection = forwardRef<
   );
 });
 
-export default FirstExperienceSection;
+export default ThirdExperienceSection;
