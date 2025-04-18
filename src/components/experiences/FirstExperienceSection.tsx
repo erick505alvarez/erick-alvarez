@@ -33,7 +33,7 @@ const FirstExperienceSection = forwardRef<
       id="wasy"
       ref={ref}
     >
-      <div className="CONTAINER relative sm:w-[80%] sm:ml-32 mt-16 sm:mt-16 md:ml-32 px-4 sm:px-0 z-10">
+      <div className="CONTAINER relative sm:w-[70%] md:w-[80%] sm:ml-32 mt-16 sm:mt-16 md:ml-32 px-4 sm:px-0 z-10">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4
@@ -41,8 +41,11 @@ const FirstExperienceSection = forwardRef<
         >
           Wasy.ai
         </h1>
-        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[15rem] sm:h-[30rem] rounded-xl flex mb-4 mt-auto overflow-hidden">
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[70%] mt-2 ml-2 sm:mt-6 sm:ml-12">
+        {/* exhibit */}
+        {/* <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[30rem] rounded-xl mb-4 mt-auto flex justify-around overflow-hidden">
+           <div className="IMG-CONTAINER wasy-img-dashboard relative w-[75%] mt-6 ml-12"></div> */}
+        <div className="PROJECT-EXHIBIT wasy-exhibit-container bg-gray-700 w-full h-[15rem] sm:h-[30rem] rounded-xl flex sm:justify-around mb-4 mt-auto overflow-hidden">
+          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[70%] sm:w-[75%] mt-2 ml-2 sm:mt-6 sm:ml-8">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
               src="../../images/mockups/wasy/wasy-exhibit-desktop.png"
@@ -51,7 +54,7 @@ const FirstExperienceSection = forwardRef<
               // width={800}
             />
           </div>
-          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] sm:-translate-x-24 sm:translate-y-10 mt-10 sm:mt-4">
+          <div className="IMG-CONTAINER wasy-img-dashboard relative w-[25%] sm:-translate-x-12 md:-translate-x-24 sm:translate-y-10 mt-10 sm:mt-4">
             <StaticImage
               className="object-contain w-full flex-shrink-0"
               src="../../images/mockups/wasy/wasy-exhibit-mobile.png"

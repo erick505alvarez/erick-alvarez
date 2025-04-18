@@ -19,7 +19,7 @@ const ThirdExperienceSection = forwardRef<
       ref={ref}
     >
       {/* page container */}
-      <div className="CONTAINER sm:w-[80%] sm:ml-32 mt-16 sm:mt-16 px-4 sm:px-0 z-10 flex-grow flex flex-col">
+      <div className="CONTAINER sm:w-[70%] md:w-[80%] sm:ml-32 mt-16 sm:mt-16 px-4 sm:px-0 z-10 flex-grow flex flex-col">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
             mb-4"
@@ -66,7 +66,7 @@ const ThirdExperienceSection = forwardRef<
                 return <SkillCard key={skill} skill={skill} />;
               })}
             </div>
-            <p className="w-full lg:absolute lg:top-[1%] right-0 lg:translate-x-[-2vw] mb-2 lg:mb-0 text-xs sm:text-lg">
+            <p className="w-full lg:absolute lg:top-[1%] right-0 lg:translate-x-[-2vw] mb-2 lg:mb-0 mt-4 lg:mt-0 text-xs sm:text-lg">
               As the technology lead of a global portfolio management team, I
               spearheaded a team effort to author a{" "}
               <span className="font-bold">Python library</span> for BlackRock

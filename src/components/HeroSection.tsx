@@ -38,7 +38,7 @@ const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
 
     return (
       <section
-        className="HERO-CONTAINER relative snap-start flex flex-col md:flex-row justify-around items-center py-20 md:py-40 pb-24 md:pb-36 px-6 aspect-[16/9] sm:h-screen w-full"
+        className="HERO-CONTAINER relative snap-start flex flex-col md:flex-row justify-around items-center py-20 md:py-40 pb-24 md:pb-36 px-6 aspect-[16/9] min-h-screen w-full"
         ref={ref}
       >
         <div className="z-10 w-full h-full flex flex-col md:flex-row justify-around items-center">
