@@ -1,0 +1,7 @@
+export enum PAGES {
+  HERO = "HERO",
+  WASY = "WASY",
+  MOLEQLAR = "MOLEQLAR",
+  BLACKROCK = "BLACKROCK",
+  CONTACT = "CONTACT",
+}

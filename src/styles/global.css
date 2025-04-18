@@ -10,6 +10,22 @@
 
 html {
   scroll-behavior: smooth;
+  /* white */
+  --white: #FCFCFC;
+  /* orange */
+  --orange-500: #DD7A09;
+  --orange-300: #EA9C3E;
+  --orange-200: #F0C795;
+  --orange-100: #FDFAF2;
+  /* purple */
+  --purple-500: #D773FF;
+  --purple-300: #D695F0;
+  --purple-200: #F6E6FC;
+  /* yellow */
+  --yellow-500: "#E4BF1F";
+  --yellow-300: "#F2E4A4";
+  --yellow-100: "#FCF8E6";
+
 }
 
 @layer base {
@@ -17,3 +33,4 @@ html {
     @apply font-outfit;
   }
 }
+
