@@ -79,7 +79,7 @@ const DesignCanvas = () => {
 
   return (
     <div
-      className={`DESIGN-CANVAS w-full z-0 top-0 bottom-0 left-0 right-0 ${section_bg_colors[currentPage]}`}
+      className={`DESIGN-CANVAS w-full z-[-10] top-0 bottom-0 left-0 right-0 ${section_bg_colors[currentPage]}`}
     >
       <SquareGrid
         gridDimensions={100}
