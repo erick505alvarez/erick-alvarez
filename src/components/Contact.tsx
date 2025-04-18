@@ -81,12 +81,12 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 <p>{firstError.message?.toString()}</p>
               </div>
             )}
-            <div className="flex flex-col md:flex-row w-full justify-between mb-8">
+            <div className="flex flex-col sm:flex-row w-full justify-between mb-8 gap-8 md:gap-0">
               <input
                 type="text"
                 {...register("name", { required: "Name is required" })}
                 placeholder="Name"
-                className="border-b-2 border-black w-[45%] bg-transparent placeholder:text-gray-600"
+                className="border-b-2 border-black w-full sm:w-[45%] bg-transparent placeholder:text-gray-600"
               />
               <input
                 type="email"
@@ -98,7 +98,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                   },
                 })}
                 placeholder="Email"
-                className="border-b-2 border-black w-[45%] bg-transparent placeholder:text-gray-600"
+                className="border-b-2 border-black w-full sm:w-[45%] bg-transparent placeholder:text-gray-600"
               />
             </div>
             <textarea
@@ -109,8 +109,8 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
               placeholder="Message"
               className="border-b-2 border-black w-full h-60 bg-transparent resize-none placeholder:text-gray-600"
             ></textarea>
-            <div className="w-full pt-16">
-              <button className="text-white font-bold text-xl bg-orange-500 py-2 px-4 rounded mx-auto block">
+            <div className="w-full pt-8 sm:pt-16">
+              <button className="text-white font-bold text-lg sm:text-xl bg-orange-500 py-2 px-4 rounded mx-auto block">
                 Let's Connect
               </button>
             </div>
