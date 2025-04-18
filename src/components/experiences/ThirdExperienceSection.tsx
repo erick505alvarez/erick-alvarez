@@ -14,7 +14,8 @@ const ThirdExperienceSection = forwardRef<
   const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (
     <section
-      className="THIRD-XP-PAGE flex flex-col justify-start snap-start h-auto sm:h-screen border border-transparent pb-10 sm:pb-0 relative"
+      className="THIRD-XP-PAGE flex flex-col justify-start snap-start h-auto sm:min-h-screen sm:pb-12
+      border border-transparent pb-10 lg:pb-0 relative z-10"
       ref={ref}
     >
       {/* page container */}
@@ -29,7 +30,7 @@ const ThirdExperienceSection = forwardRef<
         {/* <div className="flex flex-col justify-center flex-grow"> */}
         <div className="flex flex-col lg:flex-row md:justify-center">
           {/* images container */}
-          <div className="IMAGES-CONTAINER flex flex-col relative md:h-[42rem] h-auto lg:w-[70%]">
+          <div className="IMAGES-CONTAINER flex flex-col relative md:h-[42rem] lg:h-auto h-auto lg:w-[60%]">
             <div className="IMG-WRAPPER relative md:max-w-[22rem] lg:max-w-[28rem] mb-2 sm:mb-0">
               <StaticImage
                 // className="w-full h-full flex-shrink-0"
@@ -44,11 +45,11 @@ const ThirdExperienceSection = forwardRef<
             </div>
             {/* internship photo */}
             <div
-              className="IMG-WRAPPER md:relative md:bottom-48 md:right-4 lg:absolute lg:-bottom-[10%] lg:right-0 w-full
+              className="IMG-WRAPPER md:relative md:bottom-48 md:right-4 lg:absolute lg:-bottom-[5%] lg:right-0 w-full
               sm:w-[18rem] h-[20rem] md:h-[18rem] flex-shrink-0 overflow-hidden self-end"
             >
               <StaticImage
-                className="w-full h-full rounded-lg"
+                className="h-full w-full max-w-[20rem] rounded-lg aspect-square"
                 src="../../images/blackrock.jpg"
                 alt="BlackRock Panel Discussion"
                 placeholder="blurred"
