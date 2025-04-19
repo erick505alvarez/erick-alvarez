@@ -22,7 +22,8 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   });
 
   const onSubmit = async (data: FormInputs) => {
-    const FORM_URL = "https://formsubmit.co/8186275090f2c0e05418a62f7bc396aa";
+    const FORM_URL =
+      "https://formsubmit.co/ajax/8186275090f2c0e05418a62f7bc396aa";
 
     // const { name, email, message, _captcha } = data;
 
