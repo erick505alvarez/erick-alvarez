@@ -25,7 +25,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
     const FORM_URL =
       "https://formsubmit.co/ajax/8186275090f2c0e05418a62f7bc396aa";
 
-    // const { name, email, message, _captcha } = data;
+    const { name, email, message, _captcha } = data;
 
     try {
       const res = await fetch(FORM_URL, {
@@ -34,13 +34,19 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          _captcha,
+        }),
       });
 
       if (!res.ok) {
         throw new Error("Failed to submit form. Try again.");
       }
 
+      console.log("data:", data);
       console.log("res:", res);
 
       alert("Message sent!");
