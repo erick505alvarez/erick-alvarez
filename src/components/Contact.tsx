@@ -8,6 +8,7 @@ interface FormInputs {
   email: string;
   message: string;
   _captcha: string;
+  _honey: string;
 }
 
 const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
@@ -18,14 +19,20 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormInputs>({
-    defaultValues: { name: "", email: "", message: "", _captcha: "false" },
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+      _captcha: "false",
+      _honey: "",
+    },
   });
 
   const onSubmit = async (data: FormInputs) => {
     const FORM_URL =
       "https://formsubmit.co/ajax/8186275090f2c0e05418a62f7bc396aa";
 
-    const { name, email, message, _captcha } = data;
+    const { name, email, message, _captcha, _honey } = data;
 
     try {
       const res = await fetch(FORM_URL, {
@@ -39,6 +46,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
           email,
           message,
           _captcha,
+          _honey: "",
         }),
       });
 
