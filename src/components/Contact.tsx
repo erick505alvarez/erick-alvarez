@@ -7,6 +7,7 @@ interface FormInputs {
   name: string;
   email: string;
   message: string;
+  _captcha: string;
 }
 
 const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
@@ -17,21 +18,29 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormInputs>({
-    defaultValues: { name: "", email: "", message: "" },
+    defaultValues: { name: "", email: "", message: "", _captcha: "false" },
   });
 
   const onSubmit = async (data: FormInputs) => {
     const FORM_URL = "https://formsubmit.co/8186275090f2c0e05418a62f7bc396aa";
 
+    // const { name, email, message, _captcha } = data;
+
     try {
       const res = await fetch(FORM_URL, {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify(data),
       });
 
       if (!res.ok) {
         throw new Error("Failed to submit form. Try again.");
       }
+
+      console.log("res:", res);
 
       alert("Message sent!");
     } catch (error) {
