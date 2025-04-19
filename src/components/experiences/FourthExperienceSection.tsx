@@ -37,7 +37,7 @@ const FourthExperienceSection = forwardRef<
       <div className="CONTAINER relative sm:w-[70%] md:w-[80%] sm:ml-32 mt-16 sm:mt-16 md:ml-32 px-4 sm:px-0 z-10">
         <h1
           className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold tracking-[-0.01em]
-            mb-4 text-blue-500"
+            mb-4 text-black"
         >
           Hobbies & Interests
         </h1>
