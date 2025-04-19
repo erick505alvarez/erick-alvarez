@@ -1,74 +1,8 @@
 import React, { forwardRef, memo } from "react";
-import { useForm } from "react-hook-form";
 
 interface ContactProps {}
 
-interface FormInputs {
-  name: string;
-  email: string;
-  message: string;
-  _captcha: string;
-  _honey: string;
-}
-
 const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
-  console.log("Contact component rendered");
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormInputs>({
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-      _captcha: "false",
-      _honey: "",
-    },
-  });
-
-  const onSubmit = async (data: FormInputs) => {
-    const FORM_URL =
-      "https://formsubmit.co/ajax/8186275090f2c0e05418a62f7bc396aa";
-
-    const { name, email, message, _captcha, _honey } = data;
-
-    try {
-      const res = await fetch(FORM_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-          _captcha,
-          _honey: "",
-        }),
-      });
-
-      if (!res.ok) {
-        throw new Error("Failed to submit form. Try again.");
-      }
-
-      console.log("data:", data);
-      console.log("res:", res);
-
-      alert("Message sent!");
-    } catch (error) {
-      console.error(error);
-      alert("Error sending message. Please refresh the page and try again.");
-    }
-  };
-
-  console.log("errors:", errors);
-
-  // Find the first error message
-  const firstError = Object.values(errors).find((error) => error);
-
   return (
     <section
       ref={ref}
@@ -84,57 +18,56 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
         </h1>
         <div className="w-full flex items-center justify-center flex-grow">
           <form
-            onSubmit={handleSubmit(onSubmit)}
+            action="https://formsubmit.co/8186275090f2c0e05418a62f7bc396aa"
+            method="POST"
             className="w-full h-full max-w-[40rem] flex flex-col p-4 font-montserrat"
           >
-            {/* <!-- Hidden honey pot field --> */}
+            {/* Hidden honey pot field */}
             <input type="text" name="_honey" className="hidden" />
 
-            {/* <!-- Disable captcha --> */}
+            {/* Disable captcha */}
             <input type="hidden" name="_captcha" value="false" />
 
-            {/* <!-- Redirect URL --> */}
-            {/* <!-- <input
+            {/* Redirect URL (optional) */}
+            {/* <input
               type="hidden"
               name="_next"
-              value={`https://erickalvarez.info/`}
-            /> --> */}
-            {/* Error Section */}
-            {firstError && (
-              <div className="bg-red-100 border border-red-500 text-red-700 px-4 py-3 rounded mb-6">
-                <p>{firstError.message?.toString()}</p>
-              </div>
-            )}
+              value="https://erickalvarez.info/"
+            /> */}
+
+            {/* Name Field */}
             <div className="flex flex-col sm:flex-row w-full justify-between mb-8 gap-8 md:gap-0">
               <input
                 type="text"
-                {...register("name", { required: "Name is required" })}
+                name="name"
                 placeholder="Name"
+                required
                 className="border-b-2 border-black w-full sm:w-[45%] bg-transparent placeholder:text-gray-600"
               />
               <input
                 type="email"
-                {...register("email", {
-                  required: "Email is required",
-                  pattern: {
-                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                    message: "Please enter a valid email",
-                  },
-                })}
+                name="email"
                 placeholder="Email"
+                required
                 className="border-b-2 border-black w-full sm:w-[45%] bg-transparent placeholder:text-gray-600"
               />
             </div>
+
+            {/* Message Field */}
             <textarea
-              {...register("message", {
-                required: "Message is required",
-                minLength: { value: 2, message: "Minimum message length is 2" },
-              })}
+              name="message"
               placeholder="Message"
+              required
+              minLength={2}
               className="border-b-2 border-black w-full h-60 bg-transparent resize-none placeholder:text-gray-600"
             ></textarea>
+
+            {/* Submit Button */}
             <div className="w-full pt-8 sm:pt-16">
-              <button className="text-white font-bold text-lg sm:text-xl bg-orange-500 py-2 px-4 rounded mx-auto block">
+              <button
+                type="submit"
+                className="text-white font-bold text-lg sm:text-xl bg-orange-500 py-2 px-4 rounded mx-auto block"
+              >
                 Let's Connect
               </button>
             </div>
@@ -145,6 +78,6 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   );
 });
 
-Contact.displayName = "Contact"; // Important for React DevTools and debugging
+Contact.displayName = "Contact";
 
 export default memo(Contact);
