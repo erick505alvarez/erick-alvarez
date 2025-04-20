@@ -16,6 +16,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "dotenv": "^16.5.0",
     "gatsby": "^5.14.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.14.0",
@@ -27,7 +29,9 @@
     "puppeteer": "^24.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^2.16.0"
+    "react-hook-form": "^7.56.0",
+    "react-player": "^2.16.0",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
