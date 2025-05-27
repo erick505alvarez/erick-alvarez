@@ -41,8 +41,6 @@ const NavBar = React.memo(function NavBar({
 }: {
   currentPage: keyof typeof PAGES;
 }) {
-  // console.log("NavBar rendering");
-
   const nav_bg_color = {
     HERO: "bg-orange-500",
     WASY: "bg-orange-500",
@@ -53,14 +51,17 @@ const NavBar = React.memo(function NavBar({
   };
 
   return (
-    <nav className="flex fixed justify-end items-center px-6 h-[80px] w-full max-w-[1440px] z-[1]">
-      <a href="#contact">
-        <button
-          className={`${nav_bg_color[currentPage]} text-white py-2 px-6 rounded-md font-montserrat font-bold text-sm sm:text-lg`}
-        >
-          Let's Chat
-        </button>
-      </a>
+    <nav className="fixed left-0 top-0 flex justify-end w-full h-[80px] z-[10]">
+      {/* Inner wrapper to match content width */}
+      <div className="max-w-[1440px] w-full mx-auto px-6 flex justify-end items-center">
+        <a href="#contact">
+          <button
+            className={`${nav_bg_color[currentPage]} text-white py-2 px-6 rounded-md font-montserrat font-bold text-sm sm:text-lg`}
+          >
+            Let's Chat
+          </button>
+        </a>
+      </div>
     </nav>
   );
 });
