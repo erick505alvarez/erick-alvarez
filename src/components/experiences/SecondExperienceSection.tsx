@@ -9,7 +9,7 @@ const SecondExperienceSection = forwardRef<
   HTMLDivElement,
   SecondExperienceSectionProps
 >((props, ref) => {
-  console.log("SecondExperienceSection component rendered");
+  // console.log("SecondExperienceSection component rendered");
 
   const skills = [
     "React",

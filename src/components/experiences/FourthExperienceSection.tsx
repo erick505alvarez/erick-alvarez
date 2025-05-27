@@ -9,7 +9,7 @@ const FourthExperienceSection = forwardRef<
   HTMLDivElement,
   FourthExperienceSectionProps
 >((props, ref) => {
-  console.log("FourthExperienceSection component rendered");
+  // console.log("FourthExperienceSection component rendered");
 
   const [showVideoOverlay, setShowVideoOverlay] = useState(false);
   const [playing, setPlaying] = useState(false); // To control video playback

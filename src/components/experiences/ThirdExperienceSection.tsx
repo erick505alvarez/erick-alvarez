@@ -9,7 +9,7 @@ const ThirdExperienceSection = forwardRef<
   HTMLDivElement,
   ThirdExperienceSectionProps
 >((props, ref) => {
-  console.log("ThirdExperienceSection component rendered");
+  // console.log("ThirdExperienceSection component rendered");
 
   const skills = ["Python", "PostgreSQL", "Jupyter"];
   return (

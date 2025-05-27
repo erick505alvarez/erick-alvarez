@@ -1,10 +1,5 @@
-// HeroSection.tsx
+// src/components/HeroSection.tsx
 import React, { forwardRef, memo } from "react";
-// import erickPhoto from "../images/profile-photo-erick.png";
-// import githubLogo from "../images/logos/github.png";
-// import linkedinLogo from "../images/logos/linkedin.png";
-// import tiktokLogo from "../images/logos/tiktok.png";
-// import instagramLogo from "../images/logos/instagram.png";
 
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -12,7 +7,7 @@ interface HeroSectionProps {}
 
 const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
   (props, ref) => {
-    console.log("HeroSection component rendered");
+    // console.log("HeroSection component rendered");
 
     const logoClasses =
       "absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer";

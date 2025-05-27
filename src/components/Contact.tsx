@@ -14,7 +14,7 @@ interface FormInputs {
 }
 
 const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
-  console.log("Contact component rendered");
+  // console.log("Contact component rendered");
 
   const {
     register,

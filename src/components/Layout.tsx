@@ -41,7 +41,7 @@ const NavBar = React.memo(function NavBar({
 }: {
   currentPage: keyof typeof PAGES;
 }) {
-  console.log("NavBar rendering");
+  // console.log("NavBar rendering");
 
   const nav_bg_color = {
     HERO: "bg-orange-500",
@@ -66,7 +66,7 @@ const NavBar = React.memo(function NavBar({
 });
 
 const Layout = ({ children }: LayoutProps) => {
-  console.log("Layout rendering");
+  // console.log("Layout rendering");
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const { currentPage, setCurrentPage } = useDesignContext();
@@ -151,14 +151,18 @@ const Layout = ({ children }: LayoutProps) => {
       <DesignCanvas />
       {/* scroll container */}
       <main
-        className="relative h-full w-full max-w-[1440px] overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory scroll-smooth"
+        // className="relative h-full w-full max-w-[1440px] overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory scroll-smooth"
+        className="relative min-h-screen w-full overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory scroll-smooth"
         ref={scrollContainerRef}
       >
         {/* Use memoized navbar */}
         <NavBar currentPage={currentPage} />
 
-        {/* Use memoized children */}
-        {clonedChildren}
+        {/* Content wrapper with max-width */}
+        <div className="max-w-[1440px] mx-auto h-full w-full">
+          {/* Use memoized children */}
+          {clonedChildren}
+        </div>
       </main>
     </div>
   );
